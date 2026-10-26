@@ -1,0 +1,11 @@
+Ors Design validator: repository LICENSE; third-party packages actually included by the bundler:
+acorn: MIT (license text included)
+@jitl/quickjs-singlefile-browser-release-sync: MIT (license text included)
+@jitl/quickjs-ffi-types: MIT (license text included)
+quickjs-emscripten-core: MIT (license text included)
+picocolors: ISC (license text included)
+postcss: MIT (license text included)
+source-map-js: BSD-3-Clause (license text included)
+jstat: see bundled source notices (license text included)
+bessel: Apache-2.0 (license text included)
+@formulajs/formulajs: MIT (license text included)

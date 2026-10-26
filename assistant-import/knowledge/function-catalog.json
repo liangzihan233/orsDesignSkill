@@ -1,0 +1,2162 @@
+[
+  {
+    "name": "ABS",
+    "signature": "ABS(number)",
+    "summary": "绝对值：去掉数值的正负号。"
+  },
+  {
+    "name": "ACCRINT",
+    "signature": "ACCRINT(issue, first_interest, settlement, rate, par, frequency, basis?)",
+    "summary": "债券从发行日至结算日的应计利息；首息日与付息频率只做合法性检查，不参与分段计算。"
+  },
+  {
+    "name": "ACOS",
+    "signature": "ACOS(number)",
+    "summary": "反余弦，以弧度返回夹角。"
+  },
+  {
+    "name": "ACOSH",
+    "signature": "ACOSH(number)",
+    "summary": "反双曲余弦。"
+  },
+  {
+    "name": "ACOT",
+    "signature": "ACOT(number)",
+    "summary": "当前实现按 atan(1/number) 返回反余切主值，范围为负 π/2 到 π/2。"
+  },
+  {
+    "name": "ACOTH",
+    "signature": "ACOTH(number)",
+    "summary": "反双曲余切。"
+  },
+  {
+    "name": "AGGREGATE",
+    "signature": "AGGREGATE(function_num, options, ref1, ref2?)",
+    "summary": "按编号选择统计运算；当前实现不处理隐藏行。"
+  },
+  {
+    "name": "AI_IS_COMPLETE",
+    "signature": "AI_IS_COMPLETE(conversation)",
+    "summary": "读取 AI 对话 complete 字段是否严格为 true；不检查结束原因或对话质量。"
+  },
+  {
+    "name": "AI_LAST_USER_TEXT",
+    "signature": "AI_LAST_USER_TEXT(conversation)",
+    "summary": "提取 AI 对话最近一条用户文本。"
+  },
+  {
+    "name": "AI_ROUND_COUNT",
+    "signature": "AI_ROUND_COUNT(conversation)",
+    "summary": "读取 AI 对话保存的 round 轮次字段，并规范为零到十；不是重新统计消息条数。"
+  },
+  {
+    "name": "AI_SUMMARY",
+    "signature": "AI_SUMMARY(conversation)",
+    "summary": "读取 AI 对话保存的摘要文本。"
+  },
+  {
+    "name": "AI_TRANSCRIPT",
+    "signature": "AI_TRANSCRIPT(conversation)",
+    "summary": "提取 AI 对话全文，保留角色标识。"
+  },
+  {
+    "name": "AI_USER_TEXT",
+    "signature": "AI_USER_TEXT(conversation)",
+    "summary": "提取 AI 对话中全部用户文本。"
+  },
+  {
+    "name": "AND",
+    "signature": "AND(...args)",
+    "summary": "全部参数为真时返回真。"
+  },
+  {
+    "name": "ARABIC",
+    "signature": "ARABIC(text)",
+    "summary": "把罗马数字文本转换为阿拉伯数字。"
+  },
+  {
+    "name": "ASIN",
+    "signature": "ASIN(number)",
+    "summary": "反正弦，以弧度返回夹角。"
+  },
+  {
+    "name": "ASINH",
+    "signature": "ASINH(number)",
+    "summary": "反双曲正弦。"
+  },
+  {
+    "name": "ATAN",
+    "signature": "ATAN(number)",
+    "summary": "反正切，以弧度返回夹角。"
+  },
+  {
+    "name": "ATAN2",
+    "signature": "ATAN2(x_num, y_num)",
+    "summary": "按 Math.atan2(第一参数,第二参数) 计算方向角，当前顺序与常见 Excel 横纵坐标约定相反。"
+  },
+  {
+    "name": "ATANH",
+    "signature": "ATANH(number)",
+    "summary": "反双曲正切。"
+  },
+  {
+    "name": "AVEDEV",
+    "signature": "AVEDEV(...args)",
+    "summary": "数据相对算术平均值的平均绝对偏差。"
+  },
+  {
+    "name": "AVERAGE",
+    "signature": "AVERAGE(...args)",
+    "summary": "数值的算术平均值；数组会展开。"
+  },
+  {
+    "name": "AVERAGEA",
+    "signature": "AVERAGEA(...args)",
+    "summary": "包含逻辑值的数据平均值，真按一、假及文本按零处理。"
+  },
+  {
+    "name": "AVERAGEIF",
+    "signature": "AVERAGEIF(range, criteria, average_range?)",
+    "summary": "对满足条件的位置求平均值。"
+  },
+  {
+    "name": "AVERAGEIFS",
+    "signature": "AVERAGEIFS(average_range, criteria_range1, criteria1, ...range_criteria_pairs)",
+    "summary": "同时满足多组条件的位置求平均值。"
+  },
+  {
+    "name": "AVG",
+    "signature": "AVG(...args)",
+    "summary": "AVERAGE 的兼容别名。数值的算术平均值；数组会展开。"
+  },
+  {
+    "name": "BASE",
+    "signature": "BASE(number, radix, min_length?)",
+    "summary": "把非负整数转换为指定进制文本。"
+  },
+  {
+    "name": "BESSELI",
+    "signature": "BESSELI(x, n)",
+    "summary": "计算第一类修正贝塞尔函数。"
+  },
+  {
+    "name": "BESSELJ",
+    "signature": "BESSELJ(x, n)",
+    "summary": "计算第一类贝塞尔函数。"
+  },
+  {
+    "name": "BESSELK",
+    "signature": "BESSELK(x, n)",
+    "summary": "计算第二类修正贝塞尔函数。"
+  },
+  {
+    "name": "BESSELY",
+    "signature": "BESSELY(x, n)",
+    "summary": "计算第二类贝塞尔函数。"
+  },
+  {
+    "name": "BETA.DIST",
+    "signature": "BETA.DIST(x, alpha, beta, cumulative, a?, b?)",
+    "summary": "贝塔分布的概率密度或累积分布。"
+  },
+  {
+    "name": "BETA.INV",
+    "signature": "BETA.INV(probability, alpha, beta, a?, b?)",
+    "summary": "贝塔累积分布的反函数。"
+  },
+  {
+    "name": "BETADIST",
+    "signature": "BETADIST(x, alpha, beta, cumulative, a?, b?)",
+    "summary": "BETA.DIST 的兼容别名。贝塔分布的概率密度或累积分布。"
+  },
+  {
+    "name": "BETAINV",
+    "signature": "BETAINV(probability, alpha, beta, a?, b?)",
+    "summary": "BETA.INV 的兼容别名。贝塔累积分布的反函数。"
+  },
+  {
+    "name": "BIN2DEC",
+    "signature": "BIN2DEC(number)",
+    "summary": "把带符号二进制文本转换为十进制数。"
+  },
+  {
+    "name": "BIN2HEX",
+    "signature": "BIN2HEX(number, places?)",
+    "summary": "把二进制文本转换为十六进制文本。"
+  },
+  {
+    "name": "BIN2OCT",
+    "signature": "BIN2OCT(number, places?)",
+    "summary": "把二进制文本转换为八进制文本。"
+  },
+  {
+    "name": "BINOM.DIST",
+    "signature": "BINOM.DIST(number_s, trials, probability_s, cumulative)",
+    "summary": "二项分布的概率质量或累积概率。"
+  },
+  {
+    "name": "BINOM.INV",
+    "signature": "BINOM.INV(trials, probability_s, alpha)",
+    "summary": "达到给定累积概率的最小二项成功次数。"
+  },
+  {
+    "name": "BINOMDIST",
+    "signature": "BINOMDIST(number_s, trials, probability_s, cumulative)",
+    "summary": "BINOM.DIST 的兼容别名。二项分布的概率质量或累积概率。"
+  },
+  {
+    "name": "BITAND",
+    "signature": "BITAND(number1, number2)",
+    "summary": "两个非负整数逐位与。"
+  },
+  {
+    "name": "BITLSHIFT",
+    "signature": "BITLSHIFT(number, shift_amount)",
+    "summary": "整数按指定比特数左移，负移位量表示右移。"
+  },
+  {
+    "name": "BITOR",
+    "signature": "BITOR(number1, number2)",
+    "summary": "两个非负整数逐位或。"
+  },
+  {
+    "name": "BITRSHIFT",
+    "signature": "BITRSHIFT(number, shift_amount)",
+    "summary": "整数按指定比特数右移，负移位量表示左移。"
+  },
+  {
+    "name": "BITXOR",
+    "signature": "BITXOR(number1, number2)",
+    "summary": "两个非负整数逐位异或。"
+  },
+  {
+    "name": "CEIL",
+    "signature": "CEIL(value)",
+    "summary": "项目函数：转换数值后向正无穷取整数，无法转换按零处理。"
+  },
+  {
+    "name": "CEILING",
+    "signature": "CEILING(number, significance)",
+    "summary": "向上取整到指定倍数。"
+  },
+  {
+    "name": "CEILINGMATH",
+    "signature": "CEILINGMATH(number, significance?, mode?)",
+    "summary": "按倍数向上取整，可选择负数取整方向。"
+  },
+  {
+    "name": "CEILINGPRECISE",
+    "signature": "CEILINGPRECISE(number, significance?)",
+    "summary": "使用倍数绝对值向正无穷取整。"
+  },
+  {
+    "name": "CHAR",
+    "signature": "CHAR(number)",
+    "summary": "由字符编码生成一个字符。"
+  },
+  {
+    "name": "CHIDIST",
+    "signature": "CHIDIST(x, deg_freedom, cumulative)",
+    "summary": "卡方分布的密度或累积概率，保留兼容函数名。"
+  },
+  {
+    "name": "CHIDISTRT",
+    "signature": "CHIDISTRT(x, deg_freedom)",
+    "summary": "卡方分布右尾概率；当前实现拒绝零参数。"
+  },
+  {
+    "name": "CHIINV",
+    "signature": "CHIINV(probability, deg_freedom)",
+    "summary": "卡方分布左侧累积概率的反函数。"
+  },
+  {
+    "name": "CHIINVRT",
+    "signature": "CHIINVRT(probability, deg_freedom)",
+    "summary": "卡方分布右尾概率的反函数。"
+  },
+  {
+    "name": "CHISQ.DIST",
+    "signature": "CHISQ.DIST(x, deg_freedom, cumulative)",
+    "summary": "CHIDIST 的兼容别名。卡方分布的密度或累积概率，保留兼容函数名。"
+  },
+  {
+    "name": "CHISQ.INV",
+    "signature": "CHISQ.INV(probability, deg_freedom)",
+    "summary": "CHIINV 的兼容别名。卡方分布左侧累积概率的反函数。"
+  },
+  {
+    "name": "CHISQ.TEST",
+    "signature": "CHISQ.TEST(actual_range, expected_range)",
+    "summary": "观测频数与期望频数的卡方检验概率。"
+  },
+  {
+    "name": "CHITEST",
+    "signature": "CHITEST(actual_range, expected_range)",
+    "summary": "CHISQ.TEST 的兼容别名。观测频数与期望频数的卡方检验概率。"
+  },
+  {
+    "name": "CHOOSE",
+    "signature": "CHOOSE(index_num, ...values)",
+    "summary": "从候选值中按一开始的索引选择。"
+  },
+  {
+    "name": "CHOOSECOLS",
+    "signature": "CHOOSECOLS(array, col_num1, ...col_nums)",
+    "summary": "按一开始的列编号提取二维数组的列；负数从末列计数。"
+  },
+  {
+    "name": "CHOOSEROWS",
+    "signature": "CHOOSEROWS(array, row_num1, ...row_nums)",
+    "summary": "按一开始的行编号提取二维数组的行；负数从末行计数。"
+  },
+  {
+    "name": "CLEAN",
+    "signature": "CLEAN(text)",
+    "summary": "删除文本中的 ASCII 控制字符。"
+  },
+  {
+    "name": "CODE",
+    "signature": "CODE(text)",
+    "summary": "返回文本第一个 UTF-16 码元的编码。"
+  },
+  {
+    "name": "COLUMN",
+    "signature": "COLUMN(reference, index)",
+    "summary": "从二维数组按零开始的索引提取一列。"
+  },
+  {
+    "name": "COLUMNS",
+    "signature": "COLUMNS(array)",
+    "summary": "返回数组的列数。"
+  },
+  {
+    "name": "COMBIN",
+    "signature": "COMBIN(number, number_chosen)",
+    "summary": "从总数中无放回、不计顺序地选取若干项的组合数。"
+  },
+  {
+    "name": "COMBINA",
+    "signature": "COMBINA(number, number_chosen)",
+    "summary": "允许重复选取的组合数。"
+  },
+  {
+    "name": "COMPLEX",
+    "signature": "COMPLEX(real_num, i_num, suffix?)",
+    "summary": "由实部和虚部组成复数文本。"
+  },
+  {
+    "name": "CONCAT",
+    "signature": "CONCAT(...args)",
+    "summary": "展开数组后连接文本；空值转为空串。"
+  },
+  {
+    "name": "CONCATENATE",
+    "signature": "CONCATENATE(...args)",
+    "summary": "CONCAT 的兼容别名。展开数组后连接文本；空值转为空串。"
+  },
+  {
+    "name": "CONFIDENCE.NORM",
+    "signature": "CONFIDENCE.NORM(alpha, standard_dev, size)",
+    "summary": "已知总体标准差时，均值正态置信区间的半宽。"
+  },
+  {
+    "name": "CONFIDENCE.T",
+    "signature": "CONFIDENCE.T(alpha, standard_dev, size)",
+    "summary": "使用 t 分布计算均值置信区间半宽。"
+  },
+  {
+    "name": "CONTAINS",
+    "signature": "CONTAINS(value, search)",
+    "summary": "数组按文本化后的元素精确匹配，普通值按子串匹配。"
+  },
+  {
+    "name": "CONVERT",
+    "signature": "CONVERT(number, from_unit, to_unit)",
+    "summary": "在受支持的计量单位之间转换数值。"
+  },
+  {
+    "name": "CORREL",
+    "signature": "CORREL(array1, array2)",
+    "summary": "两个等长数列的皮尔逊相关系数。"
+  },
+  {
+    "name": "COS",
+    "signature": "COS(number)",
+    "summary": "弧度角的余弦。"
+  },
+  {
+    "name": "COSH",
+    "signature": "COSH(number)",
+    "summary": "双曲余弦。"
+  },
+  {
+    "name": "COT",
+    "signature": "COT(number)",
+    "summary": "弧度角的余切。"
+  },
+  {
+    "name": "COTH",
+    "signature": "COTH(number)",
+    "summary": "双曲余切。"
+  },
+  {
+    "name": "COUNT",
+    "signature": "COUNT(...args)",
+    "summary": "统计数值及可转成有限数值的非空数字文本数量，数组递归展开。"
+  },
+  {
+    "name": "COUNTA",
+    "signature": "COUNTA(...args)",
+    "summary": "统计有答案的值，数组递归展开；零与假也算有答案。"
+  },
+  {
+    "name": "COUNTBLANK",
+    "signature": "COUNTBLANK(...args)",
+    "summary": "统计数组及参数中的空白值。"
+  },
+  {
+    "name": "COUNTIF",
+    "signature": "COUNTIF(range, criteria)",
+    "summary": "统计一个条件匹配的项数。"
+  },
+  {
+    "name": "COUNTIFS",
+    "signature": "COUNTIFS(criteria_range1, criteria1, ...range_criteria_pairs)",
+    "summary": "统计同时满足多组条件的位置数。"
+  },
+  {
+    "name": "COUPDAYS",
+    "signature": "COUPDAYS(settlement, maturity, frequency, basis?)",
+    "summary": "计算票息期间的天数。"
+  },
+  {
+    "name": "COVAR",
+    "signature": "COVAR(array1, array2)",
+    "summary": "两个等长数列的总体协方差。"
+  },
+  {
+    "name": "COVARIANCE.P",
+    "signature": "COVARIANCE.P(array1, array2)",
+    "summary": "COVAR 的兼容别名。两个等长数列的总体协方差。"
+  },
+  {
+    "name": "COVARIANCE.S",
+    "signature": "COVARIANCE.S(array1, array2)",
+    "summary": "两个等长数列的样本协方差。"
+  },
+  {
+    "name": "COVARIANCEP",
+    "signature": "COVARIANCEP(array1, array2)",
+    "summary": "COVAR 的兼容别名。两个等长数列的总体协方差。"
+  },
+  {
+    "name": "COVARIANCES",
+    "signature": "COVARIANCES(array1, array2)",
+    "summary": "COVARIANCE.S 的兼容别名。两个等长数列的样本协方差。"
+  },
+  {
+    "name": "CRITBINOM",
+    "signature": "CRITBINOM(trials, probability_s, alpha)",
+    "summary": "BINOM.INV 的兼容别名。达到给定累积概率的最小二项成功次数。"
+  },
+  {
+    "name": "CSC",
+    "signature": "CSC(number)",
+    "summary": "弧度角的余割。"
+  },
+  {
+    "name": "CSCH",
+    "signature": "CSCH(number)",
+    "summary": "双曲余割。"
+  },
+  {
+    "name": "CUMIPMT",
+    "signature": "CUMIPMT(rate, nper, pv, start_period, end_period, type)",
+    "summary": "指定付款期间累计支付的利息，支出为负。"
+  },
+  {
+    "name": "CUMPRINC",
+    "signature": "CUMPRINC(rate, nper, pv, start_period, end, type)",
+    "summary": "指定付款期间累计归还的本金，支出为负。"
+  },
+  {
+    "name": "DATE",
+    "signature": "DATE(year, month, day)",
+    "summary": "由年、月、日创建本地日期；超出范围的月份和日会进位。"
+  },
+  {
+    "name": "DATEDIF",
+    "signature": "DATEDIF(start_date, end_date, unit)",
+    "summary": "两个日期之间完整年、月或日的差值。"
+  },
+  {
+    "name": "DATEVALUE",
+    "signature": "DATEVALUE(date_text)",
+    "summary": "把受支持的日期文本解析为日期对象。"
+  },
+  {
+    "name": "DAVERAGE",
+    "signature": "DAVERAGE(database, field, criteria)",
+    "summary": "筛选列式数据库记录后计算指定字段平均值。"
+  },
+  {
+    "name": "DAY",
+    "signature": "DAY(serial_number)",
+    "summary": "日期的月内日数。"
+  },
+  {
+    "name": "DAYS",
+    "signature": "DAYS(end_date, start_date)",
+    "summary": "结束日期减开始日期的天数。"
+  },
+  {
+    "name": "DAYS360",
+    "signature": "DAYS360(start_date, end_date, method?)",
+    "summary": "按每年三百六十天规则计算日期差。"
+  },
+  {
+    "name": "DB",
+    "signature": "DB(cost, salvage, life, period, month?)",
+    "summary": "固定余额递减法计算指定期折旧。"
+  },
+  {
+    "name": "DCOUNT",
+    "signature": "DCOUNT(database, field, criteria)",
+    "summary": "筛选列式数据库记录后统计指定字段数值个数。"
+  },
+  {
+    "name": "DCOUNTA",
+    "signature": "DCOUNTA(database, field, criteria)",
+    "summary": "筛选列式数据库记录后统计指定字段非空值个数。"
+  },
+  {
+    "name": "DDB",
+    "signature": "DDB(cost, salvage, life, period, factor?)",
+    "summary": "双倍或指定倍数余额递减法折旧。"
+  },
+  {
+    "name": "DEC2BIN",
+    "signature": "DEC2BIN(number, places?)",
+    "summary": "把十进制整数转换为带符号二进制文本。"
+  },
+  {
+    "name": "DEC2HEX",
+    "signature": "DEC2HEX(number, places?)",
+    "summary": "把十进制整数转换为带符号十六进制文本。"
+  },
+  {
+    "name": "DEC2OCT",
+    "signature": "DEC2OCT(number, places?)",
+    "summary": "把十进制整数转换为带符号八进制文本。"
+  },
+  {
+    "name": "DECIMAL",
+    "signature": "DECIMAL(text, radix)",
+    "summary": "把指定进制文本转换为十进制数。"
+  },
+  {
+    "name": "DEGREES",
+    "signature": "DEGREES(angle)",
+    "summary": "把弧度转换为角度。"
+  },
+  {
+    "name": "DELTA",
+    "signature": "DELTA(number1, number2?)",
+    "summary": "两个数相等返回一，否则返回零。"
+  },
+  {
+    "name": "DEVSQ",
+    "signature": "DEVSQ(...args)",
+    "summary": "数值偏离平均值的平方和。"
+  },
+  {
+    "name": "DGET",
+    "signature": "DGET(database, field, criteria)",
+    "summary": "从列式数据库取唯一匹配记录的字段；多条匹配返回错误。"
+  },
+  {
+    "name": "DISC",
+    "signature": "DISC(settlement, maturity, pr, redemption, basis?)",
+    "summary": "贴现证券的年贴现率。"
+  },
+  {
+    "name": "DMAX",
+    "signature": "DMAX(database, field, criteria)",
+    "summary": "筛选列式数据库记录后返回指定字段最大值。"
+  },
+  {
+    "name": "DMIN",
+    "signature": "DMIN(database, field, criteria)",
+    "summary": "筛选列式数据库记录后返回指定字段最小值。"
+  },
+  {
+    "name": "DOLLAR",
+    "signature": "DOLLAR(number, decimals?)",
+    "summary": "把数值格式化为带美元符号、分组符的小数文本。"
+  },
+  {
+    "name": "DOLLARDE",
+    "signature": "DOLLARDE(fractional_dollar, fraction)",
+    "summary": "把分数式美元报价转换为十进制报价。"
+  },
+  {
+    "name": "DOLLARFR",
+    "signature": "DOLLARFR(decimal_dollar, fraction)",
+    "summary": "把十进制美元报价转换为指定分母的分数报价。"
+  },
+  {
+    "name": "DPRODUCT",
+    "signature": "DPRODUCT(database, field, criteria)",
+    "summary": "筛选列式数据库记录后计算指定字段乘积。"
+  },
+  {
+    "name": "DROP",
+    "signature": "DROP(array, rows?, columns?)",
+    "summary": "删除数组开头或末尾指定数量的行和列。"
+  },
+  {
+    "name": "DSTDEV",
+    "signature": "DSTDEV(database, field, criteria)",
+    "summary": "筛选列式数据库记录后计算指定字段样本标准差。"
+  },
+  {
+    "name": "DSTDEVP",
+    "signature": "DSTDEVP(database, field, criteria)",
+    "summary": "筛选列式数据库记录后计算指定字段总体标准差。"
+  },
+  {
+    "name": "DSUM",
+    "signature": "DSUM(database, field, criteria)",
+    "summary": "筛选列式数据库记录后对指定字段求和。"
+  },
+  {
+    "name": "DVAR",
+    "signature": "DVAR(database, field, criteria)",
+    "summary": "筛选列式数据库记录后计算指定字段样本方差。"
+  },
+  {
+    "name": "DVARP",
+    "signature": "DVARP(database, field, criteria)",
+    "summary": "筛选列式数据库记录后计算指定字段总体方差。"
+  },
+  {
+    "name": "EDATE",
+    "signature": "EDATE(start_date, months)",
+    "summary": "将日期前后平移指定月数，默认返回日期对象。"
+  },
+  {
+    "name": "EFFECT",
+    "signature": "EFFECT(nominal_rate, npery)",
+    "summary": "从名义年利率和每年复利次数算实际年利率。"
+  },
+  {
+    "name": "EOMONTH",
+    "signature": "EOMONTH(start_date, months)",
+    "summary": "返回指定月数偏移后的月末日期。"
+  },
+  {
+    "name": "ERF",
+    "signature": "ERF(lower_limit, upper_limit?)",
+    "summary": "计算从零到 lower_limit 的误差函数；当前 upper_limit 参数仅检查类型，不参与积分。"
+  },
+  {
+    "name": "ERFC",
+    "signature": "ERFC(x)",
+    "summary": "互补误差函数，一减误差函数。"
+  },
+  {
+    "name": "ERROR.TYPE",
+    "signature": "ERROR.TYPE(error_val)",
+    "summary": "把电子表格错误对象映射为错误代码。"
+  },
+  {
+    "name": "EVEN",
+    "signature": "EVEN(number)",
+    "summary": "向远离零方向取整为偶数。"
+  },
+  {
+    "name": "EXACT",
+    "signature": "EXACT(text1, text2)",
+    "summary": "区分大小写比较两个文本是否完全相等。"
+  },
+  {
+    "name": "EXP",
+    "signature": "EXP(number)",
+    "summary": "自然常数 e 的指定次幂。"
+  },
+  {
+    "name": "EXPAND",
+    "signature": "EXPAND(array, rows?, columns?, pad_with?)",
+    "summary": "把数组扩展至指定行列数，用指定值填充新增位置。"
+  },
+  {
+    "name": "EXPON.DIST",
+    "signature": "EXPON.DIST(x, lambda, cumulative)",
+    "summary": "指数分布的密度或累积概率。"
+  },
+  {
+    "name": "EXPONDIST",
+    "signature": "EXPONDIST(x, lambda, cumulative)",
+    "summary": "EXPON.DIST 的兼容别名。指数分布的密度或累积概率。"
+  },
+  {
+    "name": "F.DIST",
+    "signature": "F.DIST(x, deg_freedom1, deg_freedom2, cumulative)",
+    "summary": "F 分布的密度或累积概率。"
+  },
+  {
+    "name": "F.INV",
+    "signature": "F.INV(probability, deg_freedom1, deg_freedom2)",
+    "summary": "F 分布左尾累积概率的反函数。"
+  },
+  {
+    "name": "F.TEST",
+    "signature": "F.TEST(array1, array2)",
+    "summary": "两个样本方差的 F 检验概率。"
+  },
+  {
+    "name": "FACT",
+    "signature": "FACT(number)",
+    "summary": "非负整数的阶乘，输入小数先截断。"
+  },
+  {
+    "name": "FACTDOUBLE",
+    "signature": "FACTDOUBLE(number)",
+    "summary": "非负整数的双阶乘。"
+  },
+  {
+    "name": "FALSE",
+    "signature": "FALSE()",
+    "summary": "返回逻辑假。"
+  },
+  {
+    "name": "FDIST",
+    "signature": "FDIST(x, deg_freedom1, deg_freedom2, cumulative)",
+    "summary": "F.DIST 的兼容别名。F 分布的密度或累积概率。"
+  },
+  {
+    "name": "FDISTRT",
+    "signature": "FDISTRT(x, deg_freedom1, deg_freedom2)",
+    "summary": "F 分布右尾概率。"
+  },
+  {
+    "name": "FIND",
+    "signature": "FIND(find_text, within_text, start_num?)",
+    "summary": "区分大小写查找文本，返回从一开始的位置。"
+  },
+  {
+    "name": "FINV",
+    "signature": "FINV(probability, deg_freedom1, deg_freedom2)",
+    "summary": "F.INV 的兼容别名。F 分布左尾累积概率的反函数。"
+  },
+  {
+    "name": "FINVRT",
+    "signature": "FINVRT(probability, deg_freedom1, deg_freedom2)",
+    "summary": "F 分布右尾概率的反函数。"
+  },
+  {
+    "name": "FISHER",
+    "signature": "FISHER(x)",
+    "summary": "把相关系数转换为 Fisher z 值。"
+  },
+  {
+    "name": "FISHERINV",
+    "signature": "FISHERINV(y)",
+    "summary": "Fisher z 变换的反函数。"
+  },
+  {
+    "name": "FIXED",
+    "signature": "FIXED(number, decimals?, no_commas?)",
+    "summary": "按小数位数格式化数字，可禁用千分位分组。"
+  },
+  {
+    "name": "FLOOR",
+    "signature": "FLOOR(value)",
+    "summary": "项目覆盖：把单个数值向负无穷取整，忽略电子表格倍数语义。"
+  },
+  {
+    "name": "FLOORMATH",
+    "signature": "FLOORMATH(number, significance?, mode?)",
+    "summary": "按指定倍数向下取整，可指定负数方向。"
+  },
+  {
+    "name": "FLOORPRECISE",
+    "signature": "FLOORPRECISE(number, significance?)",
+    "summary": "按倍数绝对值向负无穷取整。"
+  },
+  {
+    "name": "FORECAST",
+    "signature": "FORECAST(x, known_ys, known_xs)",
+    "summary": "根据已知点作线性回归预测。"
+  },
+  {
+    "name": "FREQUENCY",
+    "signature": "FREQUENCY(data_array, bins_array)",
+    "summary": "按区间上界统计频数，最后一项统计超出最大上界的值。"
+  },
+  {
+    "name": "FTEST",
+    "signature": "FTEST(array1, array2)",
+    "summary": "F.TEST 的兼容别名。两个样本方差的 F 检验概率。"
+  },
+  {
+    "name": "FV",
+    "signature": "FV(rate, nper, payment, value$1?, type?)",
+    "summary": "固定利率和定额付款的未来值，流入与流出符号相反。"
+  },
+  {
+    "name": "FVSCHEDULE",
+    "signature": "FVSCHEDULE(principal, schedule)",
+    "summary": "本金按一系列逐期利率复利后的未来值。"
+  },
+  {
+    "name": "GAMMA",
+    "signature": "GAMMA(number)",
+    "summary": "伽马函数。"
+  },
+  {
+    "name": "GAMMADIST",
+    "signature": "GAMMADIST(value$1, alpha, beta, cumulative)",
+    "summary": "伽马分布密度或累积概率。"
+  },
+  {
+    "name": "GAMMAINV",
+    "signature": "GAMMAINV(probability, alpha, beta)",
+    "summary": "伽马分布累积概率的反函数。"
+  },
+  {
+    "name": "GAMMALN",
+    "signature": "GAMMALN(x)",
+    "summary": "伽马函数绝对值的自然对数。"
+  },
+  {
+    "name": "GAMMALNPRECISE",
+    "signature": "GAMMALNPRECISE(x)",
+    "summary": "精确命名兼容版伽马对数函数。"
+  },
+  {
+    "name": "GAUSS",
+    "signature": "GAUSS(z)",
+    "summary": "标准正态分布从均值零到指定 z 值的概率。"
+  },
+  {
+    "name": "GCD",
+    "signature": "GCD(...args)",
+    "summary": "多个整数的最大公约数。"
+  },
+  {
+    "name": "GEOMEAN",
+    "signature": "GEOMEAN(...args)",
+    "summary": "正数集合的几何平均值。"
+  },
+  {
+    "name": "GESTEP",
+    "signature": "GESTEP(number, step?)",
+    "summary": "数值大于等于门槛返回一，否则返回零。"
+  },
+  {
+    "name": "GROWTH",
+    "signature": "GROWTH(known_y, known_x?, new_x?, use_const?)",
+    "summary": "按指数回归关系预测增长值。"
+  },
+  {
+    "name": "HARMEAN",
+    "signature": "HARMEAN(...args)",
+    "summary": "正数集合的调和平均值。"
+  },
+  {
+    "name": "HEX2BIN",
+    "signature": "HEX2BIN(number, places?)",
+    "summary": "十六进制文本转二进制文本。"
+  },
+  {
+    "name": "HEX2DEC",
+    "signature": "HEX2DEC(number)",
+    "summary": "十六进制文本转十进制数。"
+  },
+  {
+    "name": "HEX2OCT",
+    "signature": "HEX2OCT(number, places?)",
+    "summary": "十六进制文本转八进制文本。"
+  },
+  {
+    "name": "HLOOKUP",
+    "signature": "HLOOKUP(lookup_value, table_array, row_index_num, range_lookup?)",
+    "summary": "在二维表首行查找，再返回指定行的值。"
+  },
+  {
+    "name": "HOUR",
+    "signature": "HOUR(serial_number)",
+    "summary": "提取日期的小时。"
+  },
+  {
+    "name": "HSTACK",
+    "signature": "HSTACK(array, ...otherArrays)",
+    "summary": "把数组从左到右拼接。"
+  },
+  {
+    "name": "HYPGEOM.DIST",
+    "signature": "HYPGEOM.DIST(sample_s, number_sample, population_s, number_pop, cumulative)",
+    "summary": "不放回抽样的超几何概率或累积概率。"
+  },
+  {
+    "name": "HYPGEOMDIST",
+    "signature": "HYPGEOMDIST(sample_s, number_sample, population_s, number_pop, cumulative)",
+    "summary": "HYPGEOM.DIST 的兼容别名。不放回抽样的超几何概率或累积概率。"
+  },
+  {
+    "name": "IF",
+    "signature": "IF(condition, yes, no)",
+    "summary": "项目覆盖：按条件真假选取两个已计算参数中的一个。"
+  },
+  {
+    "name": "IFERROR",
+    "signature": "IFERROR(value, value_if_error)",
+    "summary": "首参数是错误对象时返回替代值，否则保留原值。"
+  },
+  {
+    "name": "IFNA",
+    "signature": "IFNA(value, value_if_na)",
+    "summary": "仅首参数为无法取得值错误时返回替代值。"
+  },
+  {
+    "name": "IFS",
+    "signature": "IFS(logical_test1, value_if_true1, ...condition_value_pairs)",
+    "summary": "顺序测试条件和值的配对，返回首个真条件的值。"
+  },
+  {
+    "name": "IMABS",
+    "signature": "IMABS(inumber)",
+    "summary": "复数模长。"
+  },
+  {
+    "name": "IMAGINARY",
+    "signature": "IMAGINARY(inumber)",
+    "summary": "提取复数文本的虚部系数。"
+  },
+  {
+    "name": "IMARGUMENT",
+    "signature": "IMARGUMENT(inumber)",
+    "summary": "复数的辐角，以弧度返回。"
+  },
+  {
+    "name": "IMCONJUGATE",
+    "signature": "IMCONJUGATE(inumber)",
+    "summary": "返回复数的共轭复数文本。"
+  },
+  {
+    "name": "IMCOS",
+    "signature": "IMCOS(inumber)",
+    "summary": "复数余弦。"
+  },
+  {
+    "name": "IMCOSH",
+    "signature": "IMCOSH(inumber)",
+    "summary": "复数双曲余弦。"
+  },
+  {
+    "name": "IMCOT",
+    "signature": "IMCOT(inumber)",
+    "summary": "复数余切。"
+  },
+  {
+    "name": "IMCSC",
+    "signature": "IMCSC(inumber)",
+    "summary": "复数余割。"
+  },
+  {
+    "name": "IMCSCH",
+    "signature": "IMCSCH(inumber)",
+    "summary": "复数双曲余割。"
+  },
+  {
+    "name": "IMDIV",
+    "signature": "IMDIV(inumber1, inumber2)",
+    "summary": "两个复数相除。"
+  },
+  {
+    "name": "IMEXP",
+    "signature": "IMEXP(inumber)",
+    "summary": "复数指数函数。"
+  },
+  {
+    "name": "IMLN",
+    "signature": "IMLN(inumber)",
+    "summary": "复数自然对数。"
+  },
+  {
+    "name": "IMLOG10",
+    "signature": "IMLOG10(inumber)",
+    "summary": "复数以十为底的对数。"
+  },
+  {
+    "name": "IMLOG2",
+    "signature": "IMLOG2(inumber)",
+    "summary": "复数以二为底的对数。"
+  },
+  {
+    "name": "IMPOWER",
+    "signature": "IMPOWER(inumber, number)",
+    "summary": "复数的实数次幂。"
+  },
+  {
+    "name": "IMPRODUCT",
+    "signature": "IMPRODUCT(...args)",
+    "summary": "多个复数的乘积。"
+  },
+  {
+    "name": "IMREAL",
+    "signature": "IMREAL(inumber)",
+    "summary": "提取复数文本的实部。"
+  },
+  {
+    "name": "IMSEC",
+    "signature": "IMSEC(inumber)",
+    "summary": "复数正割。"
+  },
+  {
+    "name": "IMSECH",
+    "signature": "IMSECH(inumber)",
+    "summary": "复数双曲正割。"
+  },
+  {
+    "name": "IMSIN",
+    "signature": "IMSIN(inumber)",
+    "summary": "复数正弦。"
+  },
+  {
+    "name": "IMSINH",
+    "signature": "IMSINH(inumber)",
+    "summary": "复数双曲正弦。"
+  },
+  {
+    "name": "IMSQRT",
+    "signature": "IMSQRT(inumber)",
+    "summary": "复数平方根。"
+  },
+  {
+    "name": "IMSUB",
+    "signature": "IMSUB(inumber1, inumber2)",
+    "summary": "两个复数相减。"
+  },
+  {
+    "name": "IMSUM",
+    "signature": "IMSUM(...args)",
+    "summary": "多个复数相加。"
+  },
+  {
+    "name": "IMTAN",
+    "signature": "IMTAN(inumber)",
+    "summary": "复数正切；纯实零输入当前会抛出底层类型异常。"
+  },
+  {
+    "name": "INDEX",
+    "signature": "INDEX(array, row_num?, column_num?)",
+    "summary": "按一开始的行、列编号取数组值。"
+  },
+  {
+    "name": "INT",
+    "signature": "INT(number)",
+    "summary": "向负无穷方向取整数。"
+  },
+  {
+    "name": "INTERCEPT",
+    "signature": "INTERCEPT(known_y, known_x)",
+    "summary": "已知点线性回归直线的纵轴截距。"
+  },
+  {
+    "name": "IPMT",
+    "signature": "IPMT(rate, per, nper, pv, fv?, type?)",
+    "summary": "固定付款贷款某一期的利息金额。"
+  },
+  {
+    "name": "IRR",
+    "signature": "IRR(values, guess?)",
+    "summary": "等间隔现金流的内部收益率。"
+  },
+  {
+    "name": "IS_EMPTY",
+    "signature": "IS_EMPTY(value)",
+    "summary": "判断答案是否为空；数组和对象递归检查。"
+  },
+  {
+    "name": "IS_NOT_EMPTY",
+    "signature": "IS_NOT_EMPTY(value)",
+    "summary": "判断答案是否包含有效值，零与假均有效。"
+  },
+  {
+    "name": "ISBLANK",
+    "signature": "ISBLANK(value)",
+    "summary": "当前实现只把 null 识别为空白，不把空字符串视为空白。"
+  },
+  {
+    "name": "ISERR",
+    "signature": "ISERR(value$1)",
+    "summary": "判断是否为错误对象，但排除无法取得值错误。"
+  },
+  {
+    "name": "ISERROR",
+    "signature": "ISERROR(value)",
+    "summary": "判断值是否为错误对象。"
+  },
+  {
+    "name": "ISEVEN",
+    "signature": "ISEVEN(number)",
+    "summary": "判断截断后整数是否为偶数。"
+  },
+  {
+    "name": "ISIN",
+    "signature": "ISIN(value, ...choices)",
+    "summary": "判断标量属于候选集；数组须非空且全部元素都属于候选集。"
+  },
+  {
+    "name": "ISLOGICAL",
+    "signature": "ISLOGICAL(value)",
+    "summary": "判断值是否为布尔类型。"
+  },
+  {
+    "name": "ISNA",
+    "signature": "ISNA(value)",
+    "summary": "判断是否为无法取得值错误。"
+  },
+  {
+    "name": "ISNONTEXT",
+    "signature": "ISNONTEXT(value)",
+    "summary": "判断值不是文本类型。"
+  },
+  {
+    "name": "ISNUMBER",
+    "signature": "ISNUMBER(value)",
+    "summary": "判断值是否为数值类型。"
+  },
+  {
+    "name": "ISO.CEILING",
+    "signature": "ISO.CEILING(number, significance)",
+    "summary": "CEILING 的兼容别名。向上取整到指定倍数。"
+  },
+  {
+    "name": "ISODD",
+    "signature": "ISODD(value)",
+    "summary": "判断截断后整数是否为奇数。"
+  },
+  {
+    "name": "ISOWEEKNUM",
+    "signature": "ISOWEEKNUM(date)",
+    "summary": "按 ISO 规则计算日期所在周，从周一开始。"
+  },
+  {
+    "name": "ISPMT",
+    "signature": "ISPMT(rate, per, nper, pv)",
+    "summary": "计算等额本金模式某期利息，期号从零开始。"
+  },
+  {
+    "name": "ISTEXT",
+    "signature": "ISTEXT(value)",
+    "summary": "判断值是否为文本类型。"
+  },
+  {
+    "name": "KURT",
+    "signature": "KURT(...args)",
+    "summary": "样本的超额峰度。"
+  },
+  {
+    "name": "LARGE",
+    "signature": "LARGE(array, k)",
+    "summary": "返回数组中第 k 大的数值。"
+  },
+  {
+    "name": "LCM",
+    "signature": "LCM(...args)",
+    "summary": "多个整数的最小公倍数。"
+  },
+  {
+    "name": "LEFT",
+    "signature": "LEFT(text, num_chars?)",
+    "summary": "从文本左侧提取指定数量的 UTF-16 码元。"
+  },
+  {
+    "name": "LEN",
+    "signature": "LEN(value)",
+    "summary": "项目覆盖：将值转换为文本后返回 UTF-16 码元长度。"
+  },
+  {
+    "name": "LINEST",
+    "signature": "LINEST(known_y, known_x)",
+    "summary": "一元线性最小二乘回归，返回斜率和截距。"
+  },
+  {
+    "name": "LN",
+    "signature": "LN(number)",
+    "summary": "正数的自然对数。"
+  },
+  {
+    "name": "LOG",
+    "signature": "LOG(number, base?)",
+    "summary": "指定底数的对数，默认底数十。"
+  },
+  {
+    "name": "LOG10",
+    "signature": "LOG10(number)",
+    "summary": "以十为底的对数。"
+  },
+  {
+    "name": "LOGEST",
+    "signature": "LOGEST(known_y, known_x)",
+    "summary": "指数回归，返回增长倍数和初始系数。"
+  },
+  {
+    "name": "LOGINV",
+    "signature": "LOGINV(probability, mean, standard_dev)",
+    "summary": "对数正态分布累积概率的反函数，保留兼容名。"
+  },
+  {
+    "name": "LOGNORM.DIST",
+    "signature": "LOGNORM.DIST(x, mean, standard_dev, cumulative)",
+    "summary": "对数正态分布密度或累积概率。"
+  },
+  {
+    "name": "LOGNORM.INV",
+    "signature": "LOGNORM.INV(probability, mean, standard_dev)",
+    "summary": "LOGINV 的兼容别名。对数正态分布累积概率的反函数，保留兼容名。"
+  },
+  {
+    "name": "LOGNORMDIST",
+    "signature": "LOGNORMDIST(x, mean, standard_dev, cumulative)",
+    "summary": "LOGNORM.DIST 的兼容别名。对数正态分布密度或累积概率。"
+  },
+  {
+    "name": "LOGNORMINV",
+    "signature": "LOGNORMINV(probability, mean, standard_dev)",
+    "summary": "LOGINV 的兼容别名。对数正态分布累积概率的反函数，保留兼容名。"
+  },
+  {
+    "name": "LOOKUP",
+    "signature": "LOOKUP(lookup_value, array, result_array?)",
+    "summary": "在排序向量中近似查找，再返回对应结果。"
+  },
+  {
+    "name": "LOWER",
+    "signature": "LOWER(text)",
+    "summary": "把文本中的拉丁字母转小写。"
+  },
+  {
+    "name": "MATCH",
+    "signature": "MATCH(lookup_value, lookup_array, match_type?)",
+    "summary": "返回查找值在向量中从一开始的位置。"
+  },
+  {
+    "name": "MATRIX_ROW_TITLES",
+    "signature": "MATRIX_ROW_TITLES(rows, ...columns)",
+    "summary": "筛选在指定列严格选中（单元格值为 true）的矩阵行，返回行纯文本标题。"
+  },
+  {
+    "name": "MAX",
+    "signature": "MAX(...args)",
+    "summary": "数值集合的最大值。"
+  },
+  {
+    "name": "MAXA",
+    "signature": "MAXA(...args)",
+    "summary": "包含逻辑值及文本参与转换的最大值。"
+  },
+  {
+    "name": "MAXIFS",
+    "signature": "MAXIFS(max_range, criteria_range1, criteria1, ...range_criteria_pairs)",
+    "summary": "满足全部条件的数值最大值。"
+  },
+  {
+    "name": "MEDIAN",
+    "signature": "MEDIAN(...args)",
+    "summary": "数值集合的中位数。"
+  },
+  {
+    "name": "MID",
+    "signature": "MID(text, start_num, num_chars)",
+    "summary": "从一开始的位置提取指定长度文本。"
+  },
+  {
+    "name": "MIN",
+    "signature": "MIN(...args)",
+    "summary": "数值集合的最小值。"
+  },
+  {
+    "name": "MINA",
+    "signature": "MINA(...args)",
+    "summary": "包含逻辑值及文本参与转换的最小值。"
+  },
+  {
+    "name": "MINIFS",
+    "signature": "MINIFS(min_range, criteria_range1, criteria1, ...range_criteria_pairs)",
+    "summary": "满足全部条件的数值最小值。"
+  },
+  {
+    "name": "MINUTE",
+    "signature": "MINUTE(serial_number)",
+    "summary": "提取日期的分钟。"
+  },
+  {
+    "name": "MIRR",
+    "signature": "MIRR(values, finance_rate, reinvest_rate)",
+    "summary": "考虑融资利率和再投资利率的修正内部收益率。"
+  },
+  {
+    "name": "MMULT",
+    "signature": "MMULT(array1, array2)",
+    "summary": "两个二维数值矩阵相乘。"
+  },
+  {
+    "name": "MOD",
+    "signature": "MOD(left, right)",
+    "summary": "项目覆盖：JavaScript 余数，符号随被除数。"
+  },
+  {
+    "name": "MODE.MULT",
+    "signature": "MODE.MULT(...args)",
+    "summary": "返回全部出现次数最高的数值。"
+  },
+  {
+    "name": "MODE.SNGL",
+    "signature": "MODE.SNGL(...args)",
+    "summary": "返回单个众数。"
+  },
+  {
+    "name": "MODEMULT",
+    "signature": "MODEMULT(...args)",
+    "summary": "MODE.MULT 的兼容别名。返回全部出现次数最高的数值。"
+  },
+  {
+    "name": "MODESNGL",
+    "signature": "MODESNGL(...args)",
+    "summary": "MODE.SNGL 的兼容别名。返回单个众数。"
+  },
+  {
+    "name": "MONTH",
+    "signature": "MONTH(serial_number)",
+    "summary": "提取日期的月份，范围一到十二。"
+  },
+  {
+    "name": "MROUND",
+    "signature": "MROUND(number, multiple)",
+    "summary": "将数值四舍五入到指定倍数。"
+  },
+  {
+    "name": "MULTINOMIAL",
+    "signature": "MULTINOMIAL(...args)",
+    "summary": "多项式系数：总和的阶乘除各项阶乘的乘积。"
+  },
+  {
+    "name": "MUNIT",
+    "signature": "MUNIT(dimension)",
+    "summary": "生成指定阶数的单位矩阵。"
+  },
+  {
+    "name": "N",
+    "signature": "N(value)",
+    "summary": "项目覆盖：转成有限数值，无法转换时真为一、其他为零。"
+  },
+  {
+    "name": "NA",
+    "signature": "NA()",
+    "summary": "创建无法取得值错误对象。"
+  },
+  {
+    "name": "NEGBINOM.DIST",
+    "signature": "NEGBINOM.DIST(number_f, number_s, probability_s, cumulative)",
+    "summary": "达到指定成功次数前失败次数的负二项分布概率。"
+  },
+  {
+    "name": "NEGBINOMDIST",
+    "signature": "NEGBINOMDIST(number_f, number_s, probability_s, cumulative)",
+    "summary": "NEGBINOM.DIST 的兼容别名。达到指定成功次数前失败次数的负二项分布概率。"
+  },
+  {
+    "name": "NETWORKDAYS",
+    "signature": "NETWORKDAYS(start_date, end_date, holidays?)",
+    "summary": "计算包含两端日期的工作日数，默认排除周六周日。"
+  },
+  {
+    "name": "NETWORKDAYSINTL",
+    "signature": "NETWORKDAYSINTL(start_date, end_date, weekend?, holidays?)",
+    "summary": "可指定周末规则的工作日计数。"
+  },
+  {
+    "name": "NOMINAL",
+    "signature": "NOMINAL(effect_rate, npery)",
+    "summary": "由实际年利率反算名义年利率。"
+  },
+  {
+    "name": "NORM.DIST",
+    "signature": "NORM.DIST(x, mean, standard_dev, cumulative)",
+    "summary": "指定均值和标准差的正态分布密度或累积概率。"
+  },
+  {
+    "name": "NORM.INV",
+    "signature": "NORM.INV(probability, mean, standard_dev)",
+    "summary": "正态分布累积概率的反函数。"
+  },
+  {
+    "name": "NORM.S.DIST",
+    "signature": "NORM.S.DIST(z, cumulative)",
+    "summary": "标准正态分布密度或累积概率。"
+  },
+  {
+    "name": "NORM.S.INV",
+    "signature": "NORM.S.INV(probability)",
+    "summary": "标准正态分布累积概率的反函数。"
+  },
+  {
+    "name": "NORMDIST",
+    "signature": "NORMDIST(x, mean, standard_dev, cumulative)",
+    "summary": "NORM.DIST 的兼容别名。指定均值和标准差的正态分布密度或累积概率。"
+  },
+  {
+    "name": "NORMINV",
+    "signature": "NORMINV(probability, mean, standard_dev)",
+    "summary": "NORM.INV 的兼容别名。正态分布累积概率的反函数。"
+  },
+  {
+    "name": "NORMSDIST",
+    "signature": "NORMSDIST(z, cumulative)",
+    "summary": "NORM.S.DIST 的兼容别名。标准正态分布密度或累积概率。"
+  },
+  {
+    "name": "NORMSINV",
+    "signature": "NORMSINV(probability)",
+    "summary": "NORM.S.INV 的兼容别名。标准正态分布累积概率的反函数。"
+  },
+  {
+    "name": "NOT",
+    "signature": "NOT(logical)",
+    "summary": "逻辑取反。"
+  },
+  {
+    "name": "NOT_CONTAINS",
+    "signature": "NOT_CONTAINS(value, search)",
+    "summary": "CONTAINS 的取反结果。"
+  },
+  {
+    "name": "NOTIN",
+    "signature": "NOTIN(value, ...choices)",
+    "summary": "判断标量不属于候选集；数组须所有元素均不属于候选集。"
+  },
+  {
+    "name": "NOW",
+    "signature": "NOW()",
+    "summary": "当前本地日期和时间；每次求值可能变化。"
+  },
+  {
+    "name": "NPER",
+    "signature": "NPER(rate, pmt, pv, fv?, type?)",
+    "summary": "固定利率定额付款达到给定现值和终值的期数。"
+  },
+  {
+    "name": "NPV",
+    "signature": "NPV(rate, ...values)",
+    "summary": "按固定每期折现率计算期末现金流净现值。"
+  },
+  {
+    "name": "NUMBERVALUE",
+    "signature": "NUMBERVALUE(text, decimal_separator?, group_separator?)",
+    "summary": "按指定小数与分组符把文本转换为数值。"
+  },
+  {
+    "name": "OCT2BIN",
+    "signature": "OCT2BIN(number, places?)",
+    "summary": "八进制文本转换为二进制文本。"
+  },
+  {
+    "name": "OCT2DEC",
+    "signature": "OCT2DEC(number)",
+    "summary": "八进制文本转换为十进制数。"
+  },
+  {
+    "name": "OCT2HEX",
+    "signature": "OCT2HEX(number, places?)",
+    "summary": "八进制文本转换为十六进制文本。"
+  },
+  {
+    "name": "ODD",
+    "signature": "ODD(number)",
+    "summary": "向远离零方向取整到奇数。"
+  },
+  {
+    "name": "OR",
+    "signature": "OR(...args)",
+    "summary": "至少一个参数为真时返回真。"
+  },
+  {
+    "name": "PDURATION",
+    "signature": "PDURATION(rate, pv, fv)",
+    "summary": "固定增长率下现值达到终值所需期数。"
+  },
+  {
+    "name": "PEARSON",
+    "signature": "PEARSON(array1, array2)",
+    "summary": "两个数列的皮尔逊相关系数。"
+  },
+  {
+    "name": "PERCENTILE.EXC",
+    "signature": "PERCENTILE.EXC(array, k)",
+    "summary": "不包含端点秩的百分位数。"
+  },
+  {
+    "name": "PERCENTILE.INC",
+    "signature": "PERCENTILE.INC(array, k)",
+    "summary": "包含端点秩的百分位数。"
+  },
+  {
+    "name": "PERCENTILEEXC",
+    "signature": "PERCENTILEEXC(array, k)",
+    "summary": "PERCENTILE.EXC 的兼容别名。不包含端点秩的百分位数。"
+  },
+  {
+    "name": "PERCENTILEINC",
+    "signature": "PERCENTILEINC(array, k)",
+    "summary": "PERCENTILE.INC 的兼容别名。包含端点秩的百分位数。"
+  },
+  {
+    "name": "PERCENTRANK.EXC",
+    "signature": "PERCENTRANK.EXC(array, x, significance?)",
+    "summary": "以不包含端点的秩返回数值在数组中的百分比位置。"
+  },
+  {
+    "name": "PERCENTRANK.INC",
+    "signature": "PERCENTRANK.INC(array, x, significance?)",
+    "summary": "以包含端点的秩返回数值在数组中的百分比位置。"
+  },
+  {
+    "name": "PERCENTRANKEXC",
+    "signature": "PERCENTRANKEXC(array, x, significance?)",
+    "summary": "PERCENTRANK.EXC 的兼容别名。以不包含端点的秩返回数值在数组中的百分比位置。"
+  },
+  {
+    "name": "PERCENTRANKINC",
+    "signature": "PERCENTRANKINC(array, x, significance?)",
+    "summary": "PERCENTRANK.INC 的兼容别名。以包含端点的秩返回数值在数组中的百分比位置。"
+  },
+  {
+    "name": "PERMUT",
+    "signature": "PERMUT(number, number_chosen)",
+    "summary": "无重复、计顺序的排列数。"
+  },
+  {
+    "name": "PERMUTATIONA",
+    "signature": "PERMUTATIONA(number, number_chosen)",
+    "summary": "允许重复、计顺序的排列数。"
+  },
+  {
+    "name": "PHI",
+    "signature": "PHI(x)",
+    "summary": "标准正态分布概率密度。"
+  },
+  {
+    "name": "PI",
+    "signature": "PI()",
+    "summary": "返回圆周率。"
+  },
+  {
+    "name": "PMT",
+    "signature": "PMT(rate, nper, pv, fv?, type?)",
+    "summary": "固定利率贷款每期等额付款金额。"
+  },
+  {
+    "name": "POISSON.DIST",
+    "signature": "POISSON.DIST(x, mean, cumulative)",
+    "summary": "泊松分布的概率质量或累积概率。"
+  },
+  {
+    "name": "POISSONDIST",
+    "signature": "POISSONDIST(x, mean, cumulative)",
+    "summary": "POISSON.DIST 的兼容别名。泊松分布的概率质量或累积概率。"
+  },
+  {
+    "name": "POW",
+    "signature": "POW(left, right)",
+    "summary": "项目函数：两个输入转换数值后计算幂，无法转换按零处理。"
+  },
+  {
+    "name": "POWER",
+    "signature": "POWER(number, power)",
+    "summary": "数值的指定次幂。"
+  },
+  {
+    "name": "PPMT",
+    "signature": "PPMT(rate, per, nper, pv, fv?, type?)",
+    "summary": "固定付款贷款指定期偿还的本金金额。"
+  },
+  {
+    "name": "PRICEDISC",
+    "signature": "PRICEDISC(settlement, maturity, discount, redemption, basis?)",
+    "summary": "贴现证券每一百面值的价格。"
+  },
+  {
+    "name": "PROB",
+    "signature": "PROB(x_range, prob_range, lower_limit?, upper_limit?)",
+    "summary": "对离散数值范围内的概率求和。"
+  },
+  {
+    "name": "PRODUCT",
+    "signature": "PRODUCT(...args)",
+    "summary": "全部数值的乘积。"
+  },
+  {
+    "name": "PROPER",
+    "signature": "PROPER(text)",
+    "summary": "把各单词首字母改大写，其余字母小写。"
+  },
+  {
+    "name": "PV",
+    "signature": "PV(rate, per, pmt, fv?, type?)",
+    "summary": "固定利率和定额付款的现值。"
+  },
+  {
+    "name": "QUARTILE.EXC",
+    "signature": "QUARTILE.EXC(range, quart)",
+    "summary": "按排除端点方法计算四分位数。"
+  },
+  {
+    "name": "QUARTILE.INC",
+    "signature": "QUARTILE.INC(range, quart)",
+    "summary": "按包含端点方法计算四分位数。"
+  },
+  {
+    "name": "QUARTILEEXC",
+    "signature": "QUARTILEEXC(range, quart)",
+    "summary": "QUARTILE.EXC 的兼容别名。按排除端点方法计算四分位数。"
+  },
+  {
+    "name": "QUARTILEINC",
+    "signature": "QUARTILEINC(range, quart)",
+    "summary": "QUARTILE.INC 的兼容别名。按包含端点方法计算四分位数。"
+  },
+  {
+    "name": "QUOTIENT",
+    "signature": "QUOTIENT(numerator, denominator)",
+    "summary": "整数除法的商，向零截断。"
+  },
+  {
+    "name": "RADIANS",
+    "signature": "RADIANS(angle)",
+    "summary": "把角度转换为弧度。"
+  },
+  {
+    "name": "RAND",
+    "signature": "RAND()",
+    "summary": "生成大于等于零、小于一的随机数。"
+  },
+  {
+    "name": "RANDBETWEEN",
+    "signature": "RANDBETWEEN(bottom, top)",
+    "summary": "在上下界间生成随机整数，包含边界。"
+  },
+  {
+    "name": "RANK.AVG",
+    "signature": "RANK.AVG(number, ref, order?)",
+    "summary": "数值在列表中的名次，相同值取平均名次。"
+  },
+  {
+    "name": "RANK.EQ",
+    "signature": "RANK.EQ(number, ref, order?)",
+    "summary": "数值在列表中的名次，相同值取最靠前名次。"
+  },
+  {
+    "name": "RANKAVG",
+    "signature": "RANKAVG(number, ref, order?)",
+    "summary": "RANK.AVG 的兼容别名。数值在列表中的名次，相同值取平均名次。"
+  },
+  {
+    "name": "RANKEQ",
+    "signature": "RANKEQ(number, ref, order?)",
+    "summary": "RANK.EQ 的兼容别名。数值在列表中的名次，相同值取最靠前名次。"
+  },
+  {
+    "name": "RATE",
+    "signature": "RATE(nper, pmt, pv, fv?, type?, guess?)",
+    "summary": "固定付款现金流的每期利率，采用迭代求解。"
+  },
+  {
+    "name": "REPLACE",
+    "signature": "REPLACE(old_text, num_chars, length, new_text)",
+    "summary": "从指定位置开始替换固定数量字符；当前参数名 num_chars 表示起始位置。"
+  },
+  {
+    "name": "REPT",
+    "signature": "REPT(text, number_times)",
+    "summary": "重复文本指定次数。"
+  },
+  {
+    "name": "RIGHT",
+    "signature": "RIGHT(text, num_chars?)",
+    "summary": "从文本右侧提取指定数量字符。"
+  },
+  {
+    "name": "ROMAN",
+    "signature": "ROMAN(number)",
+    "summary": "把非负整数转换为罗马数字文本。"
+  },
+  {
+    "name": "ROUND",
+    "signature": "ROUND(number, num_digits)",
+    "summary": "按指定小数位四舍五入。"
+  },
+  {
+    "name": "ROUNDDOWN",
+    "signature": "ROUNDDOWN(number, num_digits)",
+    "summary": "按指定小数位向零截断。"
+  },
+  {
+    "name": "ROUNDUP",
+    "signature": "ROUNDUP(number, num_digits)",
+    "summary": "按指定小数位向远离零方向取整。"
+  },
+  {
+    "name": "ROW",
+    "signature": "ROW(reference, index)",
+    "summary": "从二维数组按零开始的索引提取一行。"
+  },
+  {
+    "name": "ROWS",
+    "signature": "ROWS(array)",
+    "summary": "返回数组的行数。"
+  },
+  {
+    "name": "RRI",
+    "signature": "RRI(nper, pv, fv)",
+    "summary": "给定期数、现值、终值计算每期复合增长率。"
+  },
+  {
+    "name": "RSQ",
+    "signature": "RSQ(known_y, known_x)",
+    "summary": "线性回归的决定系数，即皮尔逊相关系数的平方。"
+  },
+  {
+    "name": "SEARCH",
+    "signature": "SEARCH(find_text, within_text, start_num?)",
+    "summary": "不区分大小写查找文本，返回从一开始的位置。"
+  },
+  {
+    "name": "SEC",
+    "signature": "SEC(number)",
+    "summary": "弧度角的正割。"
+  },
+  {
+    "name": "SECH",
+    "signature": "SECH(number)",
+    "summary": "双曲正割。"
+  },
+  {
+    "name": "SECOND",
+    "signature": "SECOND(serial_number)",
+    "summary": "提取日期的秒数。"
+  },
+  {
+    "name": "SELECT_SIZE",
+    "signature": "SELECT_SIZE(value)",
+    "summary": "统计有答案的数组元素或对象值；标量按有无答案返回一或零。"
+  },
+  {
+    "name": "SERIESSUM",
+    "signature": "SERIESSUM(x, n, m, coefficients)",
+    "summary": "按系数计算幂级数的和。"
+  },
+  {
+    "name": "SIGN",
+    "signature": "SIGN(number)",
+    "summary": "数值符号：负数为负一，零为零，正数为一。"
+  },
+  {
+    "name": "SIN",
+    "signature": "SIN(number)",
+    "summary": "弧度角的正弦。"
+  },
+  {
+    "name": "SINH",
+    "signature": "SINH(number)",
+    "summary": "双曲正弦。"
+  },
+  {
+    "name": "SKEW",
+    "signature": "SKEW(...args)",
+    "summary": "样本偏度，采用样本修正。"
+  },
+  {
+    "name": "SKEWP",
+    "signature": "SKEWP(...args)",
+    "summary": "总体偏度。"
+  },
+  {
+    "name": "SLN",
+    "signature": "SLN(cost, salvage, life)",
+    "summary": "直线折旧法每期折旧。"
+  },
+  {
+    "name": "SLOPE",
+    "signature": "SLOPE(known_y, known_x)",
+    "summary": "已知点线性回归直线的斜率。"
+  },
+  {
+    "name": "SMALL",
+    "signature": "SMALL(array, k)",
+    "summary": "返回数组中第 k 小的数值。"
+  },
+  {
+    "name": "SORT",
+    "signature": "SORT(array, sort_index?, sort_order?, by_col?)",
+    "summary": "按指定行或列对二维数组排序。"
+  },
+  {
+    "name": "SQRT",
+    "signature": "SQRT(number)",
+    "summary": "非负数的正平方根。"
+  },
+  {
+    "name": "SQRTPI",
+    "signature": "SQRTPI(number)",
+    "summary": "数值与圆周率乘积的平方根。"
+  },
+  {
+    "name": "STANDARDIZE",
+    "signature": "STANDARDIZE(x, mean, standard_dev)",
+    "summary": "按均值与标准差把数值转换成标准分数。"
+  },
+  {
+    "name": "STDEV.P",
+    "signature": "STDEV.P(...args)",
+    "summary": "数值集合的总体标准差。"
+  },
+  {
+    "name": "STDEV.S",
+    "signature": "STDEV.S(...args)",
+    "summary": "数值集合的样本标准差。"
+  },
+  {
+    "name": "STDEVA",
+    "signature": "STDEVA(...args)",
+    "summary": "包含逻辑值及文本的样本标准差。"
+  },
+  {
+    "name": "STDEVP",
+    "signature": "STDEVP(...args)",
+    "summary": "STDEV.P 的兼容别名。数值集合的总体标准差。"
+  },
+  {
+    "name": "STDEVPA",
+    "signature": "STDEVPA(...args)",
+    "summary": "包含逻辑值及文本的总体标准差。"
+  },
+  {
+    "name": "STDEVS",
+    "signature": "STDEVS(...args)",
+    "summary": "STDEV.S 的兼容别名。数值集合的样本标准差。"
+  },
+  {
+    "name": "STEYX",
+    "signature": "STEYX(known_y, known_x)",
+    "summary": "一元线性回归预测纵坐标的标准误差。"
+  },
+  {
+    "name": "SUBSTITUTE",
+    "signature": "SUBSTITUTE(text, old_text, new_text, instance_num?)",
+    "summary": "把文本中匹配的子串替换为新文本，可指定第几次出现。"
+  },
+  {
+    "name": "SUBTOTAL",
+    "signature": "SUBTOTAL(function_num, ref1)",
+    "summary": "按汇总编号对一个数值范围计算小计。"
+  },
+  {
+    "name": "SUM",
+    "signature": "SUM(...args)",
+    "summary": "数组及参数中的数值总和。"
+  },
+  {
+    "name": "SUMIF",
+    "signature": "SUMIF(range, criteria, sum_range?)",
+    "summary": "对满足单一条件的位置求和。"
+  },
+  {
+    "name": "SUMIFS",
+    "signature": "SUMIFS(sum_range, criteria_range1, criteria1, ...range_criteria_pairs)",
+    "summary": "对同时满足多组条件的位置求和。"
+  },
+  {
+    "name": "SUMPRODUCT",
+    "signature": "SUMPRODUCT(...args)",
+    "summary": "同位置数组元素相乘后求和。"
+  },
+  {
+    "name": "SUMSQ",
+    "signature": "SUMSQ(...args)",
+    "summary": "各数平方的总和。"
+  },
+  {
+    "name": "SUMX2MY2",
+    "signature": "SUMX2MY2(array_x, array_y)",
+    "summary": "两个等长数组对应平方之差的总和。"
+  },
+  {
+    "name": "SUMX2PY2",
+    "signature": "SUMX2PY2(array_x, array_y)",
+    "summary": "两个等长数组对应平方之和的总和。"
+  },
+  {
+    "name": "SUMXMY2",
+    "signature": "SUMXMY2(array_x, array_y)",
+    "summary": "两个等长数组对应差的平方总和。"
+  },
+  {
+    "name": "SWITCH",
+    "signature": "SWITCH(expression, value1, result1, ...value_result_pairs)",
+    "summary": "按表达式与候选值匹配，返回对应结果，可有末尾默认值。"
+  },
+  {
+    "name": "SYD",
+    "signature": "SYD(cost, salvage, life, per)",
+    "summary": "年数总和法计算某期折旧。"
+  },
+  {
+    "name": "T",
+    "signature": "T(value)",
+    "summary": "输入是文本则保留，其他非错误值返回空字符串。"
+  },
+  {
+    "name": "TAKE",
+    "signature": "TAKE(array, rows?, columns?)",
+    "summary": "从数组开头或末尾取指定数量的行、列。"
+  },
+  {
+    "name": "TAN",
+    "signature": "TAN(number)",
+    "summary": "弧度角的正切。"
+  },
+  {
+    "name": "TANH",
+    "signature": "TANH(number)",
+    "summary": "双曲正切。"
+  },
+  {
+    "name": "TBILLEQ",
+    "signature": "TBILLEQ(settlement, maturity, discount)",
+    "summary": "短期国库券的债券等价收益率。"
+  },
+  {
+    "name": "TBILLPRICE",
+    "signature": "TBILLPRICE(settlement, maturity, discount)",
+    "summary": "国库券每一百面值的价格。"
+  },
+  {
+    "name": "TBILLYIELD",
+    "signature": "TBILLYIELD(settlement, maturity, pr)",
+    "summary": "根据国库券价格计算收益率。"
+  },
+  {
+    "name": "TDIST",
+    "signature": "TDIST(x, deg_freedom, cumulative)",
+    "summary": "Student t 分布尾部概率，第三参数实际是一尾或双尾编号。"
+  },
+  {
+    "name": "TDISTRT",
+    "signature": "TDISTRT(x, deg_freedom)",
+    "summary": "Student t 分布右尾概率。"
+  },
+  {
+    "name": "TEXT",
+    "signature": "TEXT(value$1, format_text)",
+    "summary": "按数字格式掩码输出文本。"
+  },
+  {
+    "name": "TEXTJOIN",
+    "signature": "TEXTJOIN(delimiter, ignore_empty, ...args)",
+    "summary": "按分隔符连接多个值，可忽略空项。"
+  },
+  {
+    "name": "TIME",
+    "signature": "TIME(hour, minute, second)",
+    "summary": "时、分、秒转换为一天的小数部分。"
+  },
+  {
+    "name": "TIMEVALUE",
+    "signature": "TIMEVALUE(time_text)",
+    "summary": "从可解析的日期时间文本提取一天的小数部分。"
+  },
+  {
+    "name": "TINV",
+    "signature": "TINV(probability, deg_freedom)",
+    "summary": "Student t 分布左尾累积概率的反函数。"
+  },
+  {
+    "name": "TODAY",
+    "signature": "TODAY()",
+    "summary": "返回当前本地日期，时间归零。"
+  },
+  {
+    "name": "TRANSPOSE",
+    "signature": "TRANSPOSE(array)",
+    "summary": "二维数组行列互换。"
+  },
+  {
+    "name": "TREND",
+    "signature": "TREND(known_ys, known_xs, new_xs)",
+    "summary": "按线性最小二乘拟合预测新横坐标的值。"
+  },
+  {
+    "name": "TRIM",
+    "signature": "TRIM(text)",
+    "summary": "去掉两端空格，并把连续空格压缩为单个空格。"
+  },
+  {
+    "name": "TRIMMEAN",
+    "signature": "TRIMMEAN(range, percent)",
+    "summary": "按两端合计比例剔除极值后求平均。"
+  },
+  {
+    "name": "TRUE",
+    "signature": "TRUE()",
+    "summary": "返回逻辑真。"
+  },
+  {
+    "name": "TRUNC",
+    "signature": "TRUNC(number, num_digits?)",
+    "summary": "按指定小数位向零截断。"
+  },
+  {
+    "name": "TTEST",
+    "signature": "TTEST(array1, array2)",
+    "summary": "两个样本的 t 检验概率；当前实现采用等方差双尾检验。"
+  },
+  {
+    "name": "TYPE",
+    "signature": "TYPE(value)",
+    "summary": "返回值类型代码：数值一、文本二、布尔四、错误十六、数组六十四。"
+  },
+  {
+    "name": "UNICHAR",
+    "signature": "UNICHAR(number)",
+    "summary": "CHAR 的兼容别名。由字符编码生成一个字符。"
+  },
+  {
+    "name": "UNICODE",
+    "signature": "UNICODE(text)",
+    "summary": "CODE 的兼容别名。返回文本第一个 UTF-16 码元的编码。"
+  },
+  {
+    "name": "UNIQUE",
+    "signature": "UNIQUE(...args)",
+    "summary": "按首次出现顺序返回去重值集合。"
+  },
+  {
+    "name": "UPPER",
+    "signature": "UPPER(text)",
+    "summary": "把文本中的拉丁字母转大写。"
+  },
+  {
+    "name": "VALUE",
+    "signature": "VALUE(value)",
+    "summary": "项目覆盖：可转为有限数值则转换，否则保留原值。"
+  },
+  {
+    "name": "VAR.P",
+    "signature": "VAR.P(...args)",
+    "summary": "数值集合的总体方差。"
+  },
+  {
+    "name": "VAR.S",
+    "signature": "VAR.S(...args)",
+    "summary": "数值集合的样本方差。"
+  },
+  {
+    "name": "VARA",
+    "signature": "VARA(...args)",
+    "summary": "包含逻辑值及文本的样本方差。"
+  },
+  {
+    "name": "VARP",
+    "signature": "VARP(...args)",
+    "summary": "VAR.P 的兼容别名。数值集合的总体方差。"
+  },
+  {
+    "name": "VARPA",
+    "signature": "VARPA(...args)",
+    "summary": "包含逻辑值及文本的总体方差。"
+  },
+  {
+    "name": "VARS",
+    "signature": "VARS(...args)",
+    "summary": "VAR.S 的兼容别名。数值集合的样本方差。"
+  },
+  {
+    "name": "VLOOKUP",
+    "signature": "VLOOKUP(lookup_value, table_array, col_index_num, range_lookup?)",
+    "summary": "在表格第一列查找，然后返回指定列的对应值。"
+  },
+  {
+    "name": "VSTACK",
+    "signature": "VSTACK(array, ...otherArrays)",
+    "summary": "把数组从上到下拼接。"
+  },
+  {
+    "name": "WEEKDAY",
+    "signature": "WEEKDAY(serial_number, return_type?)",
+    "summary": "按返回类型给出星期编号。"
+  },
+  {
+    "name": "WEEKNUM",
+    "signature": "WEEKNUM(serial_number, return_type?)",
+    "summary": "按指定周起始日计算年内周数。"
+  },
+  {
+    "name": "WEIBULL.DIST",
+    "signature": "WEIBULL.DIST(x, alpha, beta, cumulative)",
+    "summary": "威布尔分布的密度或累积概率。"
+  },
+  {
+    "name": "WEIBULLDIST",
+    "signature": "WEIBULLDIST(x, alpha, beta, cumulative)",
+    "summary": "WEIBULL.DIST 的兼容别名。威布尔分布的密度或累积概率。"
+  },
+  {
+    "name": "WORKDAY",
+    "signature": "WORKDAY(start_date, days, holidays?)",
+    "summary": "在开始日期基础上按工作日数偏移，默认排除周六周日。"
+  },
+  {
+    "name": "WORKDAYINTL",
+    "signature": "WORKDAYINTL(start_date, days, weekend?, holidays?)",
+    "summary": "使用自定义周末规则按工作日偏移日期。"
+  },
+  {
+    "name": "XIRR",
+    "signature": "XIRR(values, dates, guess?)",
+    "summary": "按实际日期间隔计算不规则现金流的内部收益率。"
+  },
+  {
+    "name": "XNPV",
+    "signature": "XNPV(rate, values, dates)",
+    "summary": "按实际日期间隔折现不规则现金流。"
+  },
+  {
+    "name": "XOR",
+    "signature": "XOR(...args)",
+    "summary": "真值参数数量为奇数时返回真。"
+  },
+  {
+    "name": "YEAR",
+    "signature": "YEAR(serial_number)",
+    "summary": "提取日期的四位年份。"
+  },
+  {
+    "name": "YEARFRAC",
+    "signature": "YEARFRAC(start_date, end_date, basis?)",
+    "summary": "按指定日计数规则计算日期区间占一年的比例。"
+  },
+  {
+    "name": "Z.TEST",
+    "signature": "Z.TEST(array, x, sigma?)",
+    "summary": "对样本均值进行单尾 z 检验。"
+  },
+  {
+    "name": "ZTEST",
+    "signature": "ZTEST(array, x, sigma?)",
+    "summary": "Z.TEST 的兼容别名。对样本均值进行单尾 z 检验。"
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "platformVersion": "1.177.0",
+  "contracts": [
+    {
+      "kind": "css",
+      "label": "自定义 CSS",
+      "entry": null,
+      "result": "CSS rules",
+      "timing": "当前设备的可见题目渲染",
+      "scope": "按实际选择器作用，不自动限定本题；question_<内部ID> 不是题目编码",
+      "network": "not applicable",
+      "writes": "样式",
+      "help": "design/properties/common"
+    },
+    {
+      "kind": "initializeAnswer",
+      "label": "答案预填代码",
+      "entry": "initializeAnswer(context)",
+      "result": "{mode:'show'|'autoComplete', answer?:本题答案}",
+      "timing": "首次实际进入且没有恢复或人工回答",
+      "scope": "只能预填本题；不能同时通过返回值和修改方法双写",
+      "network": "仅宿主允许的受控请求",
+      "writes": "本题答案",
+      "help": "design/properties/common#答案预填代码"
+    },
+    {
+      "kind": "beforeShow",
+      "label": "题目渲染逻辑",
+      "entry": "beforeShow(context)",
+      "result": "{view:{title?,note?,options?,rows?,columns?}}",
+      "timing": "进入本题的展示准备阶段",
+      "scope": "只改本题展示；不改定义、答案、结构或变量；不允许流程控制",
+      "network": "forbidden",
+      "writes": "仅返回本题 view 覆盖",
+      "help": "design/properties/common"
+    },
+    {
+      "kind": "validateAnswer",
+      "label": "答案校验逻辑",
+      "entry": "validateAnswer(context)",
+      "result": "boolean",
+      "timing": "系统必答、题型及格式校验通过后",
+      "scope": "只读答案；false 阻止继续，可调用 context.setError；不等同图形重试筛选",
+      "network": "仅宿主允许的受控请求",
+      "writes": "错误提示；不能写答案",
+      "help": "design/properties/common#图形校验与答案校验代码"
+    },
+    {
+      "kind": "resolveNext",
+      "label": "跳转逻辑",
+      "entry": "resolveNext(context)，或受支持的顶层 goto/end/complete/full 简写",
+      "result": "{directive:{type:'default'|'goto'|'gotoGroup'|'finish',...},vars?:{...}}",
+      "timing": "本题校验通过后按规则列表顺序执行",
+      "scope": "首个明确去向生效；default 继续；不能修改刚校验本题或受保护历史答案",
+      "network": "仅宿主允许的受控请求",
+      "writes": "受控跨题修改与运行变量；实际权限以目标版本合同为准",
+      "help": "design/logic/visual"
+    },
+    {
+      "kind": "questionVisibility",
+      "label": "本题显示代码",
+      "entry": "布尔表达式或 questionVisibility(context)",
+      "result": "boolean",
+      "timing": "纯显隐计算",
+      "scope": "仅答案和确定性变量；禁止写入、网络和流程控制",
+      "network": "forbidden",
+      "writes": "none",
+      "help": "design/logic/visual"
+    },
+    {
+      "kind": "optionVisibility",
+      "label": "选项／矩阵行列显示代码",
+      "entry": "布尔表达式或 optionVisibility(context)",
+      "result": "boolean",
+      "timing": "纯显隐计算",
+      "scope": "仅控制目标子项；与 beforeShow 文案覆盖分开",
+      "network": "forbidden",
+      "writes": "none",
+      "help": "design/logic/visual"
+    },
+    {
+      "kind": "shouldSelect",
+      "label": "自动选择选项",
+      "entry": "布尔表达式或 shouldSelect(context)",
+      "result": "boolean",
+      "timing": "平台自动选项计算",
+      "scope": "只读允许的前序答案；不读运行显隐；不等同答案预填",
+      "network": "forbidden",
+      "writes": "规则返回值由平台消费",
+      "help": "design/properties/auto-select"
+    },
+    {
+      "kind": "compute",
+      "label": "公式变量",
+      "entry": "表达式或 compute(context)",
+      "result": "声明的变量类型",
+      "timing": "按依赖计算纯变量",
+      "scope": "只读题目和受控快照；不写答案或跳转",
+      "network": "forbidden",
+      "writes": "none",
+      "help": "design/conditions/formula-editor"
+    }
+  ]
+}

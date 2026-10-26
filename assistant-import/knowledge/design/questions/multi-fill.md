@@ -1,0 +1,100 @@
+# 多项填空题
+
+同一题包含多个填空项，每项单独保存。题型面板会合并普通与横线式模板，保留一个添加入口。
+
+## 使用前提与入口
+
+问卷编辑 → 左侧题型面板。点击题型加入当前选中题之后，或拖到画布指定位置；选中题卡设置右侧属性。结构锁定时先停止收集。
+
+## 操作步骤
+
+1. 编辑题干和各填空项标签。
+2. 添加或批量维护填空项，设置必答与分组呈现；在“选项属性 → 填空设置”设置每个填空项的字数范围。
+3. 测试每项填写、空值与条件引用。
+
+## 按钮与设置
+
+| 名称           | 位置     | 作用与结果           | 可用条件           |
+| -------------- | -------- | -------------------- | ------------------ |
+| 填空项         | 题卡     | 编辑每个输入项的名称 | 至少存在有效项目   |
+| 添加／批量编辑 | 题卡     | 追加多个输入项       | 每行一个项目       |
+| 分组           | 选项属性 | 按组组织多个填空项   | 题型支持的分组配置 |
+| 各项输入       | 答题区   | 按项目分别填写内容   | 必答／校验满足     |
+
+## 结果与限制
+
+“最少多少字”默认为 0，“最多多少字”默认为 99999；最少值不能超过最多值，调整一端越界时另一端同步调整。旧问卷已保存的限制继续保留。可选题留空可跳过；填写后须满足字数范围，必答仍由“是否必答”控制。
+
+多个项目不是多道独立题，公式和数据导出需使用分项维度。横线式历史配置可以兼容，但不是额外的独立题型面板入口。
+
+## 取值与可用函数
+
+以下以本题实际编码为 `Q1` 为例，`Q1` 与 `context.questions.Q1` 等价。`Q1` 本身是题目对象，公式应返回具体字段或计算结果。字段支持表中的驼峰写法及大写协议名（如 `value`／`VALUE`、`hasAnswer`／`HAS_ANSWER`）；方法名区分大小写。
+
+| 写法 | 含义与返回值 |
+| --- | --- |
+| `Q1.value`／`Q1.values` | 已填各项内容的文本；一项为单值，多项为数组；`values` 始终为数组，省略空项。 |
+| `Q1.answer`／`Q1.answers`／`Q1.label` | 已填内容的文本／文本数组，不是各项目标题。 |
+| `Q1.options` | 全部项目对象，含正式编码、项目标题、输入值和已填状态。 |
+| `Q1.answerOptions`／`Q1.selected` | 已填项目对象数组。 |
+| `Q1.hasAnswer` | 是否至少一项有内容；不表示所有必填项已填写。 |
+
+通用身份字段：`Q1.id` 为内部 ID，`Q1.code` 为题目编码，`Q1.type` 为内部题型。`Q1.isShow` 仅在运行器提供显隐快照时可读；缺少快照会报错，自动选择条件禁止读取。
+
+未答时，`value`／`answer`／`label` 为 `null`，答案数组为空，`hasAnswer` 为 `false`；分数 `0` 不能单独用来判断是否作答。
+
+选项对象字段使用大写：`VALUE`（正式编码）、`TEXT`（纯文本）、`LABEL`（富文本）、`IS_SELECTED`／`IS_ANSWERED`（是否已选或已填）、`ANSWER_VALUE`（该项输入值，普通已选项通常为 `true`）、`NOTE`（附带输入，无内容通常为 `null`）、`SCORE`（配置分值）。按 `VALUE` 查找具体选项，避免把数组下标当成身份。
+
+优先通过 `options.find(item => item.VALUE === "A1")?.ANSWER_VALUE` 读取固定项目；`values` 跳过空项，不能按数组下标确定项目。横线式 `MULTIFILLBLANKLINE` 使用同一合同。
+
+### 可用方法与写入限制
+
+| 写法 | 作用 |
+| --- | --- |
+| `Q1.select()` | 答案对象中记录的项目编码数组；保留的空值键也可能被计入，不是各项内容或分数。 |
+| `Q1.isSelected("A1")` | 判断 A1 是否被记录在选择集合；有效填写用对应项目 IS_ANSWERED 判断。 |
+| `Q1.unSelect()` | 不在上述选择集合中的项目编码数组。 |
+| `Q1.unSelected("A2")` | 判断 A2 项存在且不在上述选择集合。 |
+
+`unSelect()`／`unSelected()` 都只查询，不会取消勾选。方法参数接受字符串或有限数字，按字符串比较；纯数字编码在 `select()`／`unSelect()` 中可能返回数字，使用原生 `includes` 时注意类型。返回数组独立于答案，修改数组不会修改作答。答案对象保留空字符串或 null 键时，这组选择查询仍可能包含该项；统计有效填写优先用 `answerOptions`，获取已填编码用 `Q1.options.filter(item => item.IS_ANSWERED).map(item => item.VALUE)`。
+
+当前未开放本题的 `setValue`、`setSelection`、`selectOption`、`deselectOption` 或 `clear` 写方法。不能直接给 `Q1.value` 赋值；返回数组或对象也只读，不会回写答案。
+
+### 计算示例
+
+假设 A1（姓名）填“张三”，A2（年龄）填文本 `18`。在变量素材中选择 JavaScript 函数模式、结果类型“对象”：
+
+```js
+function compute(context) {
+  return {
+    name: Q1.options.find(item => item.VALUE === "A1")?.ANSWER_VALUE ?? null,
+    values: Q1.values,
+    filled: Q1.select(),
+    count: SELECT_SIZE(Q1.answerOptions)
+  };
+}
+```
+
+预期：
+
+```json
+{
+  "name": "张三",
+  "values": [
+    "张三",
+    "18"
+  ],
+  "filled": [
+    "A1",
+    "A2"
+  ],
+  "count": 2
+}
+```
+
+完整参数与阶段说明见[变量参考](http://design.ors-cn.com/agent-help/articles/design/conditions/variables.md#题目维度全表)和[函数参考](http://design.ors-cn.com/agent-help/articles/design/conditions/functions.md)。
+
+## 相关说明
+
+- [通用属性](http://design.ors-cn.com/agent-help/articles/design/properties/common.md)
+- [选项设置](http://design.ors-cn.com/agent-help/articles/design/properties/options.md)

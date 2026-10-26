@@ -1,0 +1,88 @@
+# 平台模块目录
+
+版本：1.177.0。按问题只读取相关模块；兼容题型、占位及隐藏能力以功能状态文章和当前界面为准。
+
+- 快速入门 / [快速入门](http://design.ors-cn.com/agent-help/articles/quick-start/overview.md)：快速入门、开始使用 Ors Design、问卷管理、保存、测试与发布、功能状态说明、AI 创建、题目附件、倒计时、信息分享、AI 问卷测试 Demo
+- 快速入门 / [AI 使用助手与跨平台资料](http://design.ors-cn.com/agent-help/articles/quick-start/assistant.md)：AI助手、skill、代码辅助、五个代码按钮、公开文档、离线知识库
+- 工作台 / [工作台首页](http://design.ors-cn.com/agent-help/articles/workbench/home.md)：工作台首页、问卷管理、配额进度、近期问卷项目、最近使用、最近打开
+- 工作台 / [问卷管理](http://design.ors-cn.com/agent-help/articles/workbench/surveys.md)：问卷管理、创建问卷、文件夹与标签、问卷分享
+- 工作台 / [创建与基本信息](http://design.ors-cn.com/agent-help/articles/workbench/create.md)：创建与基本信息、问卷管理、问卷编辑工作区、模板与应用中心、智能问卷工作台、严格模板生成、题目编号、选项编号、运行核验、能力清单、可编辑草稿、草稿核对清单、逐题问答、保存失败重试、后台生成任务、断线恢复、统一生成任务、题目初稿、两阶段提取与逻辑、智能改编恢复、复制问卷、副本
+- 工作台 / [智能问卷工作台](http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md)：AI 创建、DOCX、严格生成、智能改编、自由生成、核验、重试
+- 工作台 / [文件夹、标签与目录管理](http://design.ors-cn.com/agent-help/articles/workbench/folders-tags.md)：文件夹、标签与目录管理、问卷管理、回收站的两个入口、问卷容器、子文件夹、目录恢复
+- 工作台 / [问卷分享与权限](http://design.ors-cn.com/agent-help/articles/workbench/sharing.md)：问卷分享与权限、问卷管理、收集链接、账户管理、协作授权、公开只读、授权、撤销授权、协作者
+- 工作台 / [回收站的两个入口](http://design.ors-cn.com/agent-help/articles/workbench/recycle.md)：回收站的两个入口、废弃答卷、功能状态说明
+- 工作台 / [模板中心与应用中心](http://design.ors-cn.com/agent-help/articles/workbench/templates-apps.md)：模板中心与应用中心、创建问卷、外观与设备预览、DOCX、智能问卷工作台
+- 问卷设计 / [问卷编辑工作区](http://design.ors-cn.com/agent-help/articles/design/workspace/overview.md)：页面保活、切换与加载、问卷编辑工作区、编辑工作区、题目与选项操作、大纲与分组、保存、测试与发布、属性面板折叠、区间选择
+- 问卷设计 / [题目与选项操作](http://design.ors-cn.com/agent-help/articles/design/workspace/questions-options.md)：删除前代码检查、先修正关联再删除、自动勾选规则清理、题目与选项操作、编辑工作区、通用属性、题库、富文本与答案引用、描述题、多个可输入选项、富文本说明、选项编码、批量改码、失焦检查、自动回退
+- 问卷设计 / [大纲、题目分组与批量编码](http://design.ors-cn.com/agent-help/articles/design/workspace/outline.md)：分组拖动、同级排序、大纲、题目分组与批量编码、编辑工作区、题目与选项操作、公式编辑器、子分组拖拽、顶层组排序、标题定位、展开折叠、分组属性、题目合页、批量显示代码、显示逻辑、题目编码、分组索引、独立编码显示、位置序号、区间选择、工作区分组、选项数量、分组之间插题
+- 问卷设计 / [富文本、图片与答案引用](http://design.ors-cn.com/agent-help/articles/design/workspace/rich-text.md)：富文本、图片与答案引用、编辑工作区、变量参考、连续多选与生命周期计算、题库、禁止引用答案、动态行、句内引用、引用换行
+- 问卷设计 / [保存、模拟答题与发布](http://design.ors-cn.com/agent-help/articles/design/workspace/save-publish.md)：停止发布、发布按钮组、停止后草稿回读、预发布不占正式版本号、显示条件与计算等待、预发布停止收集、保存、模拟答题与发布、编辑工作区、收集链接、答卷状态与统计、发布后不能编辑、自动保存、离开前保存、多题测试、题目编码、关联题测试、依赖题自动补入、发布加载、测试发布加载页
+- 问卷设计 / [AI 访谈题](http://design.ors-cn.com/agent-help/articles/design/questions/ai.md)：AI 访谈题、题型使用、通用属性、选项设置、AI角色卡、共享AI模型、公式变量、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [判断题](http://design.ors-cn.com/agent-help/articles/design/questions/yes-no.md)：判断题、题型使用、通用属性、选项设置、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [单选题](http://design.ors-cn.com/agent-help/articles/design/questions/radio.md)：单选题、题型使用、通用属性、选项设置、自动选择、普通配额、禁止引用答案、动态行、取值与可用函数、题目编码、脚本示例、答案预填
+- 问卷设计 / [多选题](http://design.ors-cn.com/agent-help/articles/design/questions/checkbox.md)：多选题、选项垂直居中、题型使用、通用属性、选项设置、配额概念、禁止引用答案、动态行、取值与可用函数、题目编码、脚本示例、答案预填
+- 问卷设计 / [下拉选择题](http://design.ors-cn.com/agent-help/articles/design/questions/select.md)：下拉选择题、题型使用、通用属性、选项设置、取值与可用函数、题目编码、脚本示例、答案预填
+- 问卷设计 / [填空题](http://design.ors-cn.com/agent-help/articles/design/questions/fill-blank.md)：填空题、题型使用、通用属性、选项设置、人员信息与常用预设、字数限制、最少多少字、最多多少字、电话、手机号校验、下一题拦截、取值与可用函数、题目编码、脚本示例、答案预填
+- 问卷设计 / [多行填空题](http://design.ors-cn.com/agent-help/articles/design/questions/textarea.md)：多行填空题、题型使用、通用属性、选项设置、字数限制、最少多少字、最多多少字、取值与可用函数、题目编码、脚本示例、答案预填
+- 问卷设计 / [评分题](http://design.ors-cn.com/agent-help/articles/design/questions/score.md)：评分题、题型使用、通用属性、选项设置、多项评分、数字选项顺序、数字顺序、倒序、循环、随机、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [多项评分题](http://design.ors-cn.com/agent-help/articles/design/questions/multi-score.md)：多项评分题、题型使用、通用属性、选项设置、变量参考、数字选项顺序、数字顺序、倒序、循环、随机、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [多项填空题](http://design.ors-cn.com/agent-help/articles/design/questions/multi-fill.md)：多项填空题、题型使用、通用属性、选项设置、字数限制、最少多少字、最多多少字、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [排序题](http://design.ors-cn.com/agent-help/articles/design/questions/order.md)：排序题、题型使用、通用属性、选项设置、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [量表题](http://design.ors-cn.com/agent-help/articles/design/questions/scale.md)：量表题、题型使用、通用属性、选项设置、函数参考、结果数据、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [滑块题](http://design.ors-cn.com/agent-help/articles/design/questions/slider.md)：滑块题、题型使用、通用属性、选项设置、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [级联题](http://design.ors-cn.com/agent-help/articles/design/questions/cascade.md)：级联题、题型使用、通用属性、选项设置、级联数据资源、JSON、Excel、文件导入、分片未开放、城市分类、area、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [矩阵选择题](http://design.ors-cn.com/agent-help/articles/design/questions/matrix-choice.md)：$row $col、简写、显式路径、编码冲突、单元格修改、setSelected、setValue、clear、矩阵行列选择、select、isSelected、isselect、includes、isin、notin、编号和显示代码、布尔显示条件、矩阵选项属性、弹窗关闭保存、保存并关闭、矩阵默认编码、行A列S、矩阵选择题、题型使用、通用属性、选项设置、兼容与隐藏题型、多个可输入选项、矩阵填空、禁止引用答案、动态行、字数限制、失焦改码、题目属性、配置选项、取值与可用函数、题目编码、脚本示例、矩阵单元格编码、Q1.S1.A1、行列Tab、列顺序、链式、isin、notin、any、答案预填
+- 问卷设计 / [图片多选题](http://design.ors-cn.com/agent-help/articles/design/questions/image-checkbox.md)：图片多选题、题型使用、通用属性、选项设置、图片比例、选择按钮、手机列数、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [轮播图](http://design.ors-cn.com/agent-help/articles/design/questions/carousel.md)：轮播图、题型使用、通用属性、选项设置、轮播图多选、选项属性、上传轮播图、点击图片选中、轮播多选、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [日期题](http://design.ors-cn.com/agent-help/articles/design/questions/date.md)：日期题、题型使用、通用属性、选项设置、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [时间题](http://design.ors-cn.com/agent-help/articles/design/questions/time.md)：时间题、题型使用、通用属性、选项设置、时间安排、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [分页题](http://design.ors-cn.com/agent-help/articles/design/questions/page.md)：分页题、题型使用、通用属性、选项设置、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [分段说明](http://design.ors-cn.com/agent-help/articles/design/questions/paragraph.md)：分段说明、题型使用、通用属性、选项设置、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [人员信息与常用题预设](http://design.ors-cn.com/agent-help/articles/design/questions/presets.md)：人员信息与常用题预设、题型使用、通用属性、选项设置、电话、手机号校验、下一题拦截、取值与可用函数、题目编码、脚本示例、答案预填
+- 问卷设计 / [隐藏与兼容题型附录](http://design.ors-cn.com/agent-help/articles/design/questions/legacy.md)：隐藏与兼容题型附录、题型使用、题型选择、欢迎页签名、功能状态说明、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [文件上传题](http://design.ors-cn.com/agent-help/articles/design/questions/upload.md)：文件上传题、题型使用、通用属性、选项设置、附件控制、Excel导出、取值与可用函数、题目编码、脚本示例
+- 问卷设计 / [题目附件](http://design.ors-cn.com/agent-help/articles/design/properties/attachments.md)：题目附件、上传附件、100MB、图片、同名附件、附件大小、草稿
+- 问卷设计 / [题目通用属性](http://design.ors-cn.com/agent-help/articles/design/properties/common.md)：自动完成题号、连续编号、题目通用属性、题目附件、属性与条件、选项排列与分组、公式与变量、可视化逻辑、编码改名审核、题目改码与选项引用同步、性别预设编码归属、局部变量遮蔽、显隐与跳转、轮播、基本属性、题型专属属性、逻辑简写、校验逻辑、重试筛选、匹配正则、包含选项
+- 问卷设计 / [题目关联](http://design.ors-cn.com/agent-help/articles/design/properties/associations.md)：题目关联、关联选项、选中项、未选中项、行关联、列关联、禁止引用答案、导出统计
+- 问卷设计 / [选项排列、默认值、绑定与分组](http://design.ors-cn.com/agent-help/articles/design/properties/options.md)：题目逻辑三个页签、显示逻辑表格、Excel单列粘贴、显示代码批量覆盖、编号和显示代码、布尔显示条件、矩阵选项属性、关闭保存、分组草稿、区间选择、分组编辑、编码保存失败、矩阵默认编码、行A列S、选项排列、默认值、绑定与分组、属性与条件、自动选择、题目与选项操作、选项编码、批量改码、失焦检查、自动回退、禁止引用答案、题目关联、动态行、字数限制、最少多少字、最多多少字、可输入选项、选项字数限制、行列编码重名、删除后复用编码、行列Tab、显示代码数量、编码按钮间距
+- 问卷设计 / [自动选择选项](http://design.ors-cn.com/agent-help/articles/design/properties/auto-select.md)：自动完成题号、连续编号、自动选择选项、属性与条件、变量参考、函数参考、可视化逻辑、自动勾选、保存成功、代码数量角标、链式、isin、notin、any
+- 问卷设计 / [公式编辑器操作](http://design.ors-cn.com/agent-help/articles/design/conditions/formula-editor.md)：公式编辑器操作、公式与条件、变量参考、函数参考、逻辑代码示例、变量草稿、未生效、编码联想、题目文本、选项文本、逻辑简写、show hide goto end complete full、阶段限制、链式、isin、notin、any
+- 问卷设计 / [变量与数据维度](http://design.ors-cn.com/agent-help/articles/design/conditions/variables.md)：矩阵行列查询、select、isselect、isin notin、变量与数据维度、公式与条件、变量草稿、未生效、轮播图、稳定编码、unSelect、unSelected、未选中、题型函数、写入权限、轮播取值、链式、isin、notin、any
+- 问卷设计 / [函数参考](http://design.ors-cn.com/agent-help/articles/design/conditions/functions.md)：函数参考、公式与条件、链式、isin、notin、any
+- 问卷设计 / [可视化逻辑与题目条件](http://design.ors-cn.com/agent-help/articles/design/logic/visual.md)：自定义显示代码、简单表达式、布尔返回、动态拼接、字符串目标、可视化逻辑与题目条件、逻辑设置、JavaScript 全局逻辑、逻辑示例、答卷状态、条件组、显示目标、且或对齐、新增规则默认本题、条件组默认本题、默认结束答题、题目逻辑数量角标、代码保存与取消、逻辑简写、show hide goto end complete full、阶段限制、校验逻辑、重试筛选、匹配正则、包含选项、包含多选、选项且或、单选隐藏关系、选项编码、矩阵行选项、矩阵列选项、行列选项树
+- 问卷设计 / [JavaScript 全局逻辑与迁移](http://design.ors-cn.com/agent-help/articles/design/logic/dsl.md)：自定义显示代码、简单表达式、布尔返回、动态拼接、字符串目标、JavaScript、旧 DSL 迁移、逻辑设置、有序规则、编码联想、题目文本、选项文本、逻辑简写、goto show hide end complete full、阶段限制、实际程序打开速度、链式、isin、notin、any
+- 问卷设计 / [逻辑与公式示例](http://design.ors-cn.com/agent-help/articles/design/logic/examples.md)：简写、end、题号读取、动态拼接、字符串目标、逻辑与公式示例、逻辑设置、逻辑简写、跳转与显隐、链式、isin、notin、any
+- 问卷设计 / [外观模板与设备样式](http://design.ors-cn.com/agent-help/articles/design/appearance/style.md)：页面保活、切换与加载、预览计算与脚本报错、业务查询参数、外观模板与设备样式、外观与欢迎页、欢迎页、隐私与签名、结束页与跳转、保存与发布、整页迁移、答案预填
+- 问卷设计 / [欢迎页、隐私协议与签名](http://design.ors-cn.com/agent-help/articles/design/appearance/welcome.md)：欢迎页、隐私协议与签名、外观与欢迎页、受访者填写、签名与位置题、外观与设备样式
+- 问卷设计 / [结束页、筛选结束与跳转](http://design.ors-cn.com/agent-help/articles/design/appearance/end.md)：结束页、筛选结束与跳转、外观与欢迎页、提交后行为、答卷状态与统计、跳转逻辑、配额满
+- 问卷设计 / [配额概念与收取规则](http://design.ors-cn.com/agent-help/articles/design/quota/overview.md)：配额概念与收取规则、配额设置、普通配额、交叉配额、配额进度
+- 问卷设计 / [普通配额](http://design.ors-cn.com/agent-help/articles/design/quota/normal.md)：普通配额、配额设置、配额规则、交叉配额、Excel导入导出
+- 问卷设计 / [交叉配额向导](http://design.ors-cn.com/agent-help/articles/design/quota/cross.md)：交叉配额向导、配额设置、配额规则、配额Excel、配额进度
+- 问卷设计 / [配额 Excel 导入与导出](http://design.ors-cn.com/agent-help/articles/design/quota/excel.md)：配额 Excel 导入与导出、配额设置、普通配额、交叉配额、配额进度
+- 问卷收集与填写 / [收集链接与二维码](http://design.ors-cn.com/agent-help/articles/collect/links.md)：收集链接与二维码、发布流程、受访者填写、原始数据来源筛选
+- 问卷收集与填写 / [收集设置与生效范围](http://design.ors-cn.com/agent-help/articles/collect/settings-overview.md)：停止发布、发布按钮组、收集设置与生效范围、收集设置、时间安排、安全限制、功能状态
+- 问卷收集与填写 / [答题时间安排](http://design.ors-cn.com/agent-help/articles/collect/settings-schedule.md)：答题时间安排、收集设置、访问安全、全局倒计时、全问卷倒计时、未完成、排除题目
+- 问卷收集与填写 / [防刷与访问安全](http://design.ors-cn.com/agent-help/articles/collect/settings-security.md)：防刷与访问安全、收集设置、收集设置生效范围、受访者填写、常见排查
+- 问卷收集与填写 / [答题过程体验](http://design.ors-cn.com/agent-help/articles/collect/settings-experience.md)：答题过程体验、收集设置、欢迎页要求、受访者填写
+- 问卷收集与填写 / [附件上传与题库抽取](http://design.ors-cn.com/agent-help/articles/collect/settings-upload-bank.md)：附件上传与题库抽取、收集设置、题库管理、兼容题型、题目附件、100MB
+- 问卷收集与填写 / [环境与信息追踪](http://design.ors-cn.com/agent-help/articles/collect/settings-tracking.md)：环境与信息追踪、收集设置、Excel导出、欢迎页隐私说明
+- 问卷收集与填写 / [提交后行为](http://design.ors-cn.com/agent-help/articles/collect/settings-submit.md)：提交后行为、收集设置、结束页、答卷状态、功能状态
+- 问卷收集与填写 / [外部对接与高级控制](http://design.ors-cn.com/agent-help/articles/collect/settings-advanced.md)：外部对接与高级控制、收集设置、答卷审核、Excel导出、外观样式
+- 问卷收集与填写 / [受访者填写指南](http://design.ors-cn.com/agent-help/articles/collect/filling.md)：受访者填写指南、答卷状态、欢迎流程、常见问题排查、手机号、字数限制、题目附件、超时未完成、提交等待、下一页右侧、预览页码移除
+- 答卷数据 / [答卷状态与统计口径](http://design.ors-cn.com/agent-help/articles/data/statuses.md)：答卷状态与统计口径、结果筛选、配额进度与总览、废弃答卷
+- 答卷数据 / [结果数据与筛选](http://design.ors-cn.com/agent-help/articles/data/results.md)：停止发布、发布按钮组、结果数据与筛选、详情与审核、Excel导出、废弃答卷、问卷信息分享、正式答卷、历史测试、来源筛选
+- 答卷数据 / [公开只读问卷信息分享](http://design.ors-cn.com/agent-help/articles/data/sharing.md)：问卷信息分享、公开只读、匿名、配额进度、原始数据、答案详情、手动复制
+- 答卷数据 / [答卷详情与审核](http://design.ors-cn.com/agent-help/articles/data/details-review.md)：答卷详情与审核、状态口径、废弃答卷
+- 答卷数据 / [废弃答卷与保留期限](http://design.ors-cn.com/agent-help/articles/data/discard.md)：废弃答卷与保留期限、答卷状态、配额规则、工作台回收站
+- 答卷数据 / [Excel 导出](http://design.ors-cn.com/agent-help/articles/data/export.md)：历史快照、旧预发布导出、Excel 导出、筛选设置、元数据与追踪、原始数据CSV、城市分类、area、题目关联、题目编码、选项编码、矩阵行列、最新匹配版本
+- 答卷数据 / [原始数据](http://design.ors-cn.com/agent-help/articles/data/raw.md)：原始数据、结果数据、Excel导出、废弃答卷、问卷信息分享
+- 答卷数据 / [配额进度与答卷总览](http://design.ors-cn.com/agent-help/articles/data/quota-progress.md)：配额进度与答卷总览、配额定义、答卷状态口径、结果数据、问卷信息分享
+- 我的资源 / [题库管理与复用](http://design.ors-cn.com/agent-help/articles/resources/question-bank.md)：题库管理与复用、题目操作、富文本引用、动态抽题状态、复制本题、代码清理、自动勾选、测试本题、历史显示规则
+- 我的资源 / [级联数据资源](http://design.ors-cn.com/agent-help/articles/resources/cascade-data.md)：级联数据资源、级联题、人员信息预设
+- 我的资源 / [AI角色卡](http://design.ors-cn.com/agent-help/articles/resources/ai-roles.md)：AI角色卡、AI访谈题、共享AI模型、账户与权限、共享角色卡、跨设备
+- 我的资源 / [AI 配置与共享模型](http://design.ors-cn.com/agent-help/articles/resources/ai-models.md)：AI 配置、模型、默认模型、管理员、API Key、启用、接口协议、菜单图标
+- 系统与账户 / [账户与管理员管理](http://design.ors-cn.com/agent-help/articles/system/accounts.md)：账户与管理员管理、问卷分享、系统偏好
+- 系统与账户 / [主题、语言与账户菜单](http://design.ors-cn.com/agent-help/articles/system/preferences.md)：主题、语言与账户菜单、外观设计、账户管理、常见问题
+- 常见问题与更新日志 / [功能状态说明](http://design.ors-cn.com/agent-help/articles/faq/availability.md)：功能状态说明、收集设置生效范围、隐藏题型、常见排查、问卷多语言未开放、共享模型、角色卡、轮播多选、题目附件、倒计时、公开只读
+- 常见问题与更新日志 / [常见问题排查](http://design.ors-cn.com/agent-help/articles/faq/troubleshooting.md)：常见问题排查、功能状态说明、保存发布、数据口径、AI 重试、手机校验、字数限制、附件、超时、禁止引用答案
+- 常见问题与更新日志 / [更新日志](http://design.ors-cn.com/agent-help/articles/changelog.md)：更新日志、版本、1.3.1
