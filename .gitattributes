@@ -1,0 +1,4 @@
+# Generated standalone JavaScript embeds QuickJS WASM bytes. Preserve it verbatim.
+**/scripts/validate-code.mjs binary
+# Preserve upstream license texts without whitespace normalization.
+**/licenses/*.txt -whitespace
