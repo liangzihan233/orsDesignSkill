@@ -1,5 +1,5 @@
 {
-  "platformVersion": "1.177.0",
+  "platformVersion": "1.200.0",
   "recipes": [
     {
       "id": "display-any",
@@ -805,6 +805,58 @@
       "request": {
         "kind": "css",
         "source": "#question_demo { color: #2563eb; }"
+      }
+    },
+    {
+      "id": "inverse-includes",
+      "title": "数组不包含某个值",
+      "placement": "公式表达式或允许的纯条件表达式",
+      "notes": "notinclude 是 includes 的反值，支持 fromIndex；不等同集合 notin，没有全局同名函数。",
+      "request": {
+        "kind": "compute",
+        "mode": "expression",
+        "source": "[Q1.select().notinclude(\"A1\"), Q1.select().notinclude(\"A1\", 1)]",
+        "cases": [
+          {
+            "questions": {
+              "Q1": {
+                "id": "q1",
+                "code": "Q1",
+                "type": "CHECKBOX",
+                "SELECT": [
+                  "A1",
+                  "A2"
+                ],
+                "HAS_ANSWER": true
+              }
+            },
+            "expected": {
+              "ok": true,
+              "value": [
+                false,
+                true
+              ]
+            }
+          },
+          {
+            "questions": {
+              "Q1": {
+                "id": "q1",
+                "code": "Q1",
+                "type": "CHECKBOX",
+                "SELECT": [],
+                "HAS_ANSWER": false
+              }
+            },
+            "expected": {
+              "ok": true,
+              "value": [
+                true,
+                true
+              ]
+            }
+          }
+        ]
       }
     }
   ]

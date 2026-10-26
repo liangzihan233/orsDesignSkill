@@ -1,6 +1,6 @@
 # 经配套运行器验证的代码配方
 
-版本：1.177.0。编码和答案均为演示；必须换成实际问卷编码并核对题型。测试预期随 recipes.json 提供；运行证据由交付验证记录说明，资料本身不代表已经验收用户问卷。
+版本：1.200.0。编码和答案均为演示；必须换成实际问卷编码并核对题型。测试预期随 recipes.json 提供；运行证据由交付验证记录说明，资料本身不代表已经验收用户问卷。
 
 ## 多选任意命中才显示本题
 
@@ -197,3 +197,17 @@ question_demo 是演示内部 ID；替换为实际根节点 question_<内部ID>�
 ```
 
 测试：CSS 语法检查，视觉需另验
+
+## 数组不包含某个值
+
+ID：inverse-includes
+
+粘贴位置：公式表达式或允许的纯条件表达式
+
+notinclude 是 includes 的反值，支持 fromIndex；不等同集合 notin，没有全局同名函数。
+
+```js
+[Q1.select().notinclude("A1"), Q1.select().notinclude("A1", 1)]
+```
+
+测试：case 1 → {"ok":true,"value":[false,true]}；case 2 → {"ok":true,"value":[true,true]}

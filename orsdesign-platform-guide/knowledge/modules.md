@@ -1,13 +1,13 @@
 # 平台模块目录
 
-版本：1.177.0。按问题只读取相关模块；兼容题型、占位及隐藏能力以功能状态文章和当前界面为准。
+版本：1.200.0。按问题只读取相关模块；兼容题型、占位及隐藏能力以功能状态文章和当前界面为准。
 
 - 快速入门 / [快速入门](http://design.ors-cn.com/agent-help/articles/quick-start/overview.md)：快速入门、开始使用 Ors Design、问卷管理、保存、测试与发布、功能状态说明、AI 创建、题目附件、倒计时、信息分享、AI 问卷测试 Demo
 - 快速入门 / [AI 使用助手与跨平台资料](http://design.ors-cn.com/agent-help/articles/quick-start/assistant.md)：AI助手、skill、代码辅助、五个代码按钮、公开文档、离线知识库
 - 工作台 / [工作台首页](http://design.ors-cn.com/agent-help/articles/workbench/home.md)：工作台首页、问卷管理、配额进度、近期问卷项目、最近使用、最近打开
 - 工作台 / [问卷管理](http://design.ors-cn.com/agent-help/articles/workbench/surveys.md)：问卷管理、创建问卷、文件夹与标签、问卷分享
-- 工作台 / [创建与基本信息](http://design.ors-cn.com/agent-help/articles/workbench/create.md)：创建与基本信息、问卷管理、问卷编辑工作区、模板与应用中心、智能问卷工作台、严格模板生成、题目编号、选项编号、运行核验、能力清单、可编辑草稿、草稿核对清单、逐题问答、保存失败重试、后台生成任务、断线恢复、统一生成任务、题目初稿、两阶段提取与逻辑、智能改编恢复、复制问卷、副本
-- 工作台 / [智能问卷工作台](http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md)：AI 创建、DOCX、严格生成、智能改编、自由生成、核验、重试
+- 工作台 / [创建与基本信息](http://design.ors-cn.com/agent-help/articles/workbench/create.md)：创建与基本信息、问卷管理、问卷编辑工作区、模板与应用中心、智能问卷工作台、AI工作台布局、问卷名称修改、严格模板生成、题目编号、选项编号、运行核验、能力清单、可编辑草稿、草稿核对清单、逐题问答、保存失败重试、后台生成任务、断线恢复、统一生成任务、题目初稿、两阶段提取与逻辑、智能改编恢复、复制问卷、副本
+- 工作台 / [智能问卷工作台](http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md)：AI创建、智能生成、Word导入、DOCX、草稿、确认提案、描述题、保存并进入设计器
 - 工作台 / [文件夹、标签与目录管理](http://design.ors-cn.com/agent-help/articles/workbench/folders-tags.md)：文件夹、标签与目录管理、问卷管理、回收站的两个入口、问卷容器、子文件夹、目录恢复
 - 工作台 / [问卷分享与权限](http://design.ors-cn.com/agent-help/articles/workbench/sharing.md)：问卷分享与权限、问卷管理、收集链接、账户管理、协作授权、公开只读、授权、撤销授权、协作者
 - 工作台 / [回收站的两个入口](http://design.ors-cn.com/agent-help/articles/workbench/recycle.md)：回收站的两个入口、废弃答卷、功能状态说明

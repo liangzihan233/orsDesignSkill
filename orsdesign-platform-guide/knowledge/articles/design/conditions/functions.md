@@ -40,6 +40,23 @@
 Q1.select().filter(code => code !== "A3").any("A1", "A2")
 ```
 
+## 数组 notinclude 方法
+
+`values.notinclude(searchElement, fromIndex?)` 严格等价于 `!values.includes(searchElement, fromIndex)`，仅在隔离脚本环境内提供这个小写数组方法，没有直接全局函数、`ors` 入口或其他大小写别名。支持普通数组、题目与矩阵行列 `select()/unSelect()` 返回值，以及 `map/filter` 结果。
+
+搜索采用原生 SameValueZero：数字与字符串不同，`NaN` 可以匹配 `NaN`，正负零相等，对象与数组按身份比较。空位按 `undefined` 读取；省略搜索值也按 `undefined` 搜索。空接收数组始终为 `true`。第二个参数是可选起始下标，默认 0；正数从指定位置开始，负数从数组末尾倒数定位，越界与小数转换沿用原生 `includes`。第二个参数不是候选编码，改码时只维护第一个搜索值；动态搜索值需人工审核。
+
+```js
+["A1", "A3"].notinclude("A2") // true
+["A1", "A3"].notinclude("A1", 1) // true
+["A1", "A3"].notinclude("A1", -2) // false
+[NaN].notinclude(NaN) // false
+Array(1).notinclude() // false：空位与省略搜索值均为 undefined
+[1].notinclude("1") // true
+[].notinclude() // true
+Q1.select().notinclude("A1") // 是否未包含指定编码
+```
+
 ## 保留入口的语义差异
 
 `ISIN/isin(value, ...choices)`、`NOTIN/notin(value, ...choices)` 保留原直接函数合同：候选数组递归展开，按字符串比较，没有有效候选项时两者均为 `false`。

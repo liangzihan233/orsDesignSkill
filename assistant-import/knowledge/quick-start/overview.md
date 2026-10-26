@@ -25,7 +25,7 @@
 
 ## 结果与限制
 
-正式发布与预发布都会锁定答题结构。修改题目、公式或逻辑前需停止收集；外观和配额有独立更新路径。模板中心仍是分类占位页；AI 创建已接入[智能问卷工作台](http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md)，可上传 DOCX 严格生成、智能改编或从需求自由生成，核对后保存为草稿。
+正式发布与预发布都会锁定答题结构。修改题目、公式或逻辑前需停止收集；外观和配额有独立更新路径。模板中心仍是分类占位页；AI 创建已接入[智能问卷工作台](http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md)，可通过 Word 导入或智能生成建立可编辑草稿，核对后保存并进入设计器。
 
 ## 新功能的常用入口
 
@@ -49,3 +49,13 @@
 执行器自动创建并发布四题问卷，通过真实 Chromium 点击、输入和提交，核对后端答卷、数据库答案与配额占用；支持必答、筛选、A/B 显隐、满额拒绝，以及无配额时补足成功数据。它不是任意已有问卷的通用测试入口。
 
 对 AI 说“开始问卷测试”，它会一次询问缺失的范围、预计条数和成功目标，再调用程序。报告列出各场景、首次偏差和重跑命令；成功后自动清理专属数据库，失败保留现场。首版仅支持自动新建的固定 Demo；开发后验收限制15分钟，不附带全量回归。
+
+## 最近更新的常用操作
+
+- [AI 工作台](http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md)：Word 整卷导入、描述题、多段正文、编辑草稿、确认助手提案与保存进入设计器。
+- [五个代码入口](http://design.ors-cn.com/agent-help/articles/design/properties/common.md#五个代码入口如何选择)：分别处理 CSS、预填、渲染、校验和跳转；显隐及自动勾选使用各自入口。
+- [测试与发布](http://design.ors-cn.com/agent-help/articles/design/workspace/save-publish.md)：多题测试位于基本属性，刷新读取已保存设计；正式分发前使用完整测试流程。
+- [填空属性](http://design.ors-cn.com/agent-help/articles/design/questions/fill-blank.md)、[多项填空](http://design.ors-cn.com/agent-help/articles/design/questions/multi-fill.md)：文本、整数、小数、手机号、邮箱及逐项覆盖。
+- [图片与富文本](http://design.ors-cn.com/agent-help/articles/design/workspace/rich-text.md)：公开答题和预览支持图片放大，交互图片使用独立放大入口。
+- [Excel 导出](http://design.ors-cn.com/agent-help/articles/data/export.md#题目编码工作表)：答卷工作簿附最新匹配版本的题目编码表；[信息分享](http://design.ors-cn.com/agent-help/articles/data/sharing.md)允许只读查询和导出。
+- [AI 使用助手](http://design.ors-cn.com/agent-help/articles/quick-start/assistant.md)：安装通用 skill 或知识库材料，获得入口指引、代码和验证步骤。

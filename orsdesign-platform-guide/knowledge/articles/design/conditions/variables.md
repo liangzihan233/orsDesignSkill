@@ -258,3 +258,5 @@ AI 题用 `AI_IS_COMPLETE(Q5.CONVERSATION)` 判断是否结束，用 `AI_LAST_US
 ## 编辑辅助工具
 
 点击题目、系统变量或函数素材可在光标处插入当前 JavaScript 写法；应用示例会替换当前编辑草稿，请按实际题目修改引用。格式化使用 JavaScript 编辑器的语言服务，保留字符串内容；清空只修改当前草稿，保存前仍需通过语法与返回合同检查。使用指南会在新标签页打开本页，不丢失正在编辑的内容。
+
+数组的 `.notinclude(searchElement, fromIndex?)` 判断原生 `includes` 的反值：数字与字符串不同，NaN 可匹配，空位和省略搜索值按 undefined；第二参数是可选起始下标。详见[notinclude 合同](http://design.ors-cn.com/agent-help/articles/design/conditions/functions.md#数组-notinclude-方法)。

@@ -106,3 +106,5 @@ function compute(context) {
 私有服务的大问卷审核需要容纳完整程序及属性来源索引。系统 1.254（2026-10-25）将宿主默认 Node heap 调整为 384 MiB、容器上限调整为 1 GiB，源构建、产物镜像与隔离 QA 使用相同配置；原部署需要同步更新资源配置。作者代码仍在独立的 64 MiB VM 内运行，执行时限及读写权限不变。该资源调整不改变全卷稳定计算，也不代表已验证任意规模或所有答案组合。
 
 既有权威编译缓存的总字节上限同步为 64 MiB，最多 16 条；大于上限的单个程序不缓存，显式更小的配置仍生效。复用只针对完全相同的权威定义，每次读取仍返回独立程序并校验发布指纹。
+
+数组还支持 `Q1.select().notinclude("A1", 1)`，语义为原生 `includes` 取反；可选第二参数是起始下标。没有直接函数或其他大小写别名，详见[notinclude 合同](http://design.ors-cn.com/agent-help/articles/design/conditions/functions.md#数组-notinclude-方法)。

@@ -27,7 +27,7 @@
 
 ## 使用自己的 Word 模板
 
-需要复用已有问卷正文时，使用“创建问卷 → AI 创建 → 根据上传模板生成”，上传 DOCX 后选择严格生成或智能改编。这个已接入的入口与侧栏模板中心分别使用，步骤见[智能问卷工作台](http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md)。
+需要复用已有问卷正文时，使用“创建问卷 → AI 创建 → Word 导入”，上传 DOCX 后整卷生成可编辑草稿，检查后保存并进入设计器。这个已接入的入口与侧栏模板中心分别使用，步骤见[智能问卷工作台](http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md)。
 
 ## 相关说明
 

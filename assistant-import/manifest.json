@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "platformVersion": "1.177.0",
+  "platformVersion": "1.200.0",
   "programVersion": 2,
-  "sourceCommit": "0891f38f66a08556868516df80f3e4c63c4bdf96",
-  "generatedAt": "2026-10-26T17:59:41.445Z",
+  "sourceCommit": "f047291705d9d24fafe3d2798afa3cc79a5c6df7",
+  "generatedAt": "2026-10-26T18:27:59.095Z",
   "baseUrl": "http://design.ors-cn.com",
   "articles": [
     {
@@ -22,10 +22,10 @@
         "信息分享",
         "AI 问卷测试 Demo"
       ],
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/quick-start/overview",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/quick-start/overview.md",
-      "sha256": "c49abd08aa74993f82a7a7e71d01291bc13c06b98aca588515ffae6c972f25af"
+      "sha256": "1c951d09aa15e03add9004e10b78b2f55e323a27a2cd9883bc726ce4b14e12dc"
     },
     {
       "slug": "quick-start/assistant",
@@ -88,6 +88,8 @@
         "问卷编辑工作区",
         "模板与应用中心",
         "智能问卷工作台",
+        "AI工作台布局",
+        "问卷名称修改",
         "严格模板生成",
         "题目编号",
         "选项编号",
@@ -106,10 +108,10 @@
         "复制问卷",
         "副本"
       ],
-      "updatedAt": "2026-10-26",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/workbench/create",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/workbench/create.md",
-      "sha256": "feb4c61f95edd71b3bdf5e8c392915c4a54223cb4e8243e78c4a3f62169cefa0"
+      "sha256": "fd533241e294ad662dca9732abb53685fcc3d19d516b3dcb8857a3a02e8324b5"
     },
     {
       "slug": "workbench/ai-create",
@@ -117,18 +119,19 @@
       "section": "工作台",
       "group": "问卷管理",
       "keywords": [
-        "AI 创建",
+        "AI创建",
+        "智能生成",
+        "Word导入",
         "DOCX",
-        "严格生成",
-        "智能改编",
-        "自由生成",
-        "核验",
-        "重试"
+        "草稿",
+        "确认提案",
+        "描述题",
+        "保存并进入设计器"
       ],
-      "updatedAt": "2026-10-21",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/workbench/ai-create",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/workbench/ai-create.md",
-      "sha256": "03b36836e172aae863901def4592a56e26c02323952560d69f0fd244dd8dbd0b"
+      "sha256": "de36dc7e6daf9b1a855296453b719214abcebc1a651c5671338840e337b98b58"
     },
     {
       "slug": "workbench/folders-tags",
@@ -194,10 +197,10 @@
         "DOCX",
         "智能问卷工作台"
       ],
-      "updatedAt": "2026-10-21",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/workbench/templates-apps",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/workbench/templates-apps.md",
-      "sha256": "683bf3f8807a24df9b0b82fefde4c1b873194995d8dc9b417e00bdfad269e111"
+      "sha256": "92df1061736db24379c6bcf8c468792323b1e6844e50586c8498332cdbfa6b69"
     },
     {
       "slug": "design/workspace/overview",
@@ -215,10 +218,10 @@
         "属性面板折叠",
         "区间选择"
       ],
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/workspace/overview",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/workspace/overview.md",
-      "sha256": "137d60073a7370120ab155800f6c5da1bb918b4736e63f6faaf2d10c3809c71d"
+      "sha256": "4e872f545a2a6d1cc71006f21dc3436b614b77343ba4bd2b4f819e0525c4497e"
     },
     {
       "slug": "design/workspace/questions-options",
@@ -242,10 +245,10 @@
         "失焦检查",
         "自动回退"
       ],
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-26",
       "appUrl": "http://design.ors-cn.com/#/help/design/workspace/questions-options",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/workspace/questions-options.md",
-      "sha256": "1056fdfe16ec37011998865647eb13809b5d8b076f891f5b4265b5f4a6916b66"
+      "sha256": "e1f10bc05947153a7f75080cf2917cfe2c59147ee1947c2f46ac7ed6a7f7b0c3"
     },
     {
       "slug": "design/workspace/outline",
@@ -276,10 +279,10 @@
         "选项数量",
         "分组之间插题"
       ],
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-26",
       "appUrl": "http://design.ors-cn.com/#/help/design/workspace/outline",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/workspace/outline.md",
-      "sha256": "d37084558d4d12b5bc0ad9bc73ccaf0425fc47c1f5df63c74517a5f33368e302"
+      "sha256": "be5c680d61e229e98210a4d544394eaba13b16ae67cf008132306f44844b0d50"
     },
     {
       "slug": "design/workspace/rich-text",
@@ -297,10 +300,10 @@
         "句内引用",
         "引用换行"
       ],
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/workspace/rich-text",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/workspace/rich-text.md",
-      "sha256": "79022a1d041b8374baf389cc33f26d7c59644e1d7988e2944d689c8943a6f231"
+      "sha256": "fe98f30da82c2e4c6f53c478596dc81b00881b06b3f774ae38708f8c5930195b"
     },
     {
       "slug": "design/workspace/save-publish",
@@ -328,10 +331,10 @@
         "发布加载",
         "测试发布加载页"
       ],
-      "updatedAt": "2026-10-26",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/workspace/save-publish",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/workspace/save-publish.md",
-      "sha256": "c542a94814dc0077b5424e4a7934ef37c9b6df36417bddf7cb97591114616405"
+      "sha256": "76731f0adce7bebf519f3741a7c36d0eadcbccf336dc9bb56e2e0f2d935952a0"
     },
     {
       "slug": "design/questions/ai",
@@ -464,10 +467,10 @@
         "脚本示例",
         "答案预填"
       ],
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/questions/fill-blank",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/questions/fill-blank.md",
-      "sha256": "9d36fef5e48a83e6b7d8288ba5e72bb7e311614f7f393f2a25317883e62440e5"
+      "sha256": "3fd863d8d7313f5c46150d91a08640b64d1e9ab6dec01cfd2f45aa560aa2ebc8"
     },
     {
       "slug": "design/questions/textarea",
@@ -487,10 +490,10 @@
         "脚本示例",
         "答案预填"
       ],
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/questions/textarea",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/questions/textarea.md",
-      "sha256": "ca72125623314c992517f2048de1a7f0a5a0af5f62a52b8623e1f06808340a23"
+      "sha256": "2015174fe1aba3b2c49826cc810b2e412ef9402ad2aa4a430b70aaba459f1dcd"
     },
     {
       "slug": "design/questions/score",
@@ -559,10 +562,10 @@
         "题目编码",
         "脚本示例"
       ],
-      "updatedAt": "2026-10-22",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/questions/multi-fill",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/questions/multi-fill.md",
-      "sha256": "2847d4a74bee273a53532fc00ab58a8eee7b44e893fe610606514f89e29726d6"
+      "sha256": "54f5367ef93c8092849a1570533ac8f305fff66b20eb5ae3192b7b4f5c5d6e8d"
     },
     {
       "slug": "design/questions/order",
@@ -849,10 +852,10 @@
         "脚本示例",
         "答案预填"
       ],
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/questions/presets",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/questions/presets.md",
-      "sha256": "2ec5660f5d13b5e7d385b0f8b12c34870b1964509aef181c6332e072e282166a"
+      "sha256": "935e606464bf78664e8872e50fd609943630286f3e320499ffadd6d200de1e3c"
     },
     {
       "slug": "design/questions/legacy",
@@ -942,10 +945,10 @@
         "匹配正则",
         "包含选项"
       ],
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/properties/common",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/properties/common.md",
-      "sha256": "6b8a9a010e9ea114648cd356e193dce9c893e94d861a8c667fd88f86c798ecab"
+      "sha256": "7b842731f9f657a00ed67cfed18009c5f93c3db005816503366f5d655ea23305"
     },
     {
       "slug": "design/properties/associations",
@@ -1009,10 +1012,10 @@
         "显示代码数量",
         "编码按钮间距"
       ],
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/properties/options",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/properties/options.md",
-      "sha256": "9b9bcbc9083e205f15696d79613afecc34b501fcfcb112b8e42fb500d5b55ef3"
+      "sha256": "ded62a08ad4800b0dd127458dde0f8369add561605a1b279d392d867705802e2"
     },
     {
       "slug": "design/properties/auto-select",
@@ -1064,10 +1067,10 @@
         "notin",
         "any"
       ],
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-26",
       "appUrl": "http://design.ors-cn.com/#/help/design/conditions/formula-editor",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/conditions/formula-editor.md",
-      "sha256": "1f81bfc5ee7119b447fedd7f8a40d40482bd71bdfbc01dea3c405d7624c932c8"
+      "sha256": "b1b5e7976b800c3b64cc7af7f96d522a625db92ced30e75ca105e26ea91a43c1"
     },
     {
       "slug": "design/conditions/variables",
@@ -1096,10 +1099,10 @@
         "notin",
         "any"
       ],
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-26",
       "appUrl": "http://design.ors-cn.com/#/help/design/conditions/variables",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/conditions/variables.md",
-      "sha256": "8a5ae267363cbdc749fb4f0f67425b7879d48ef81d791030e70f934ce74e95ab"
+      "sha256": "b5070e0701cf9a112d9fcc2a1a928c681e21b1da1d0752a209bb29e2f966e1b4"
     },
     {
       "slug": "design/conditions/functions",
@@ -1114,10 +1117,10 @@
         "notin",
         "any"
       ],
-      "updatedAt": "2026-10-24",
+      "updatedAt": "2026-10-26",
       "appUrl": "http://design.ors-cn.com/#/help/design/conditions/functions",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/conditions/functions.md",
-      "sha256": "b182434557b0f470b261c45403cac04b2719db666a9a11a73f431f2bad289530"
+      "sha256": "4bb488c7059ea8a84e194deff722ef0e11c1643066f2fd91fb83288b3545c704"
     },
     {
       "slug": "design/logic/visual",
@@ -1255,10 +1258,10 @@
         "签名与位置题",
         "外观与设备样式"
       ],
-      "updatedAt": "2026-10-25",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/design/appearance/welcome",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/design/appearance/welcome.md",
-      "sha256": "33acd9786b1d32275ff0860408bbc24fd49c9c11feee443e76fa7eebaa3aa4d8"
+      "sha256": "c854acc450048a7c247a82da0464d5be54dbcaa266c48d2ceb28030f1fd5b4d4"
     },
     {
       "slug": "design/appearance/end",
@@ -1394,10 +1397,10 @@
         "未完成",
         "排除题目"
       ],
-      "updatedAt": "2026-10-22",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/collect/settings-schedule",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/collect/settings-schedule.md",
-      "sha256": "2329947a6547701daf8463dca5cca6e9189fe3e2a554cdfe452fd4e82ff965d8"
+      "sha256": "e8e6eec0b6397aaf3538bb2ba85f63ef54d03aef24fd3b3d0a273fa0659cf878"
     },
     {
       "slug": "collect/settings-security",
@@ -1427,10 +1430,10 @@
         "欢迎页要求",
         "受访者填写"
       ],
-      "updatedAt": "2026-10-20",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/collect/settings-experience",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/collect/settings-experience.md",
-      "sha256": "13c0db7469273e9d5ffa24010ac22d34ebf94133c6133a7b50a53bd177c0e6d6"
+      "sha256": "61c6aa7c8a8c6c751f914b70c4497dfd16eda8958a764a252bd383be2c2a670e"
     },
     {
       "slug": "collect/settings-upload-bank",
@@ -1517,10 +1520,10 @@
         "下一页右侧",
         "预览页码移除"
       ],
-      "updatedAt": "2026-10-26",
+      "updatedAt": "2026-10-27",
       "appUrl": "http://design.ors-cn.com/#/help/collect/filling",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/collect/filling.md",
-      "sha256": "d99c4d4dba75ce5b15a6327f83ba351953b03e1b3a092d8d703fc6b9739209aa"
+      "sha256": "72c8b868fff2a355fb415f7952c6ac8f0d994111df3adf89c37b655f65bd2c76"
     },
     {
       "slug": "data/statuses",
@@ -1574,7 +1577,7 @@
       "updatedAt": "2026-10-26",
       "appUrl": "http://design.ors-cn.com/#/help/data/sharing",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/data/sharing.md",
-      "sha256": "6027ccfd0416e9708bb566ea288a92434bb194f5e63fb08b863afc0884da7540"
+      "sha256": "9d893654429f3268d7d2c702d7c46c28b4ca06e2fff5e12f1e2b2e0c4329cc60"
     },
     {
       "slug": "data/details-review",
@@ -1815,7 +1818,7 @@
       "updatedAt": "2026-10-26",
       "appUrl": "http://design.ors-cn.com/#/help/changelog",
       "publicUrl": "http://design.ors-cn.com/agent-help/articles/changelog.md",
-      "sha256": "2d9a75411dc04af6ba56c19522d71ca8bfbe10a3d7cd6b40bafab2496457c5ad"
+      "sha256": "eae2c90f053c569a487b103b2981461a543b4bab5e15c29a4ae16d7c040f2f8d"
     }
   ]
 }
